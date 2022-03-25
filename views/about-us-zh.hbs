@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap HTML template and UI kit by Medium Rare">
+    <!-- Begin loading animation -->
+    <link href="assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- End loading animation -->
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body style="padding: 0;">
+    <div class="loader">
+        <div class="loading-animation"></div>
+    </div>
+    <!-- <div class="alert alert-dismissible d-none d-md-block bg-primary text-white py-4 py-md-3 px-0 mb-0 rounded-0 border-0">
+    <div class="container">
+        <div class="row no-gutters align-items-md-center justify-content-center">
+            <div class="col-lg-11 col-md d-flex flex-column flex-md-row align-items-md-center justify-content-lg-center">
+                <div class="mb-3 mb-md-0"><strong>Intro Sale</strong> $10 per license for Jumpstart's launch. Act fast, ends soon.</div>
+                <a class="btn btn-sm btn-light ml-md-3" target="_blank" href=#>Redeem Offer</a>
+            </div>
+            <div class="col-auto position-absolute right">
+                <button type="button" class="close p-0 position-relative" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                        <img src="assets/img/icons/interface/icon-x.svg" alt="Close" class="icon icon-sm bg-white" data-inject-svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+    {{> newHeader}}
+
+    <div class="bg-primary-3 o-hidden" data-overlay>
+        <section class="text-white pb-0">
+            <div class="container pb-5">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-9 col-lg-8 col-xl-7">
+                        <h1 class="display-3">关于<mark data-aos="highlight-text"
+                                data-aos-delay="250">realbid.asia<br>亚洲产拍</mark></h1>
+                        {{!-- <p class="lead mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p> --}}
+
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute w-50 h-100 top left" data-jarallax-element="100 50">
+                <div class="blob blob-4 bg-gradient w-100 h-100 top left"></div>
+            </div>
+            <div class="divider divider-bottom bg-white"></div>
+        </section>
+    </div>
+    <br>
+    <section style="padding-top: 10px; ;">
+        <div class="container" style="background-color: cadetblue; padding-top:30px">
+            <div class="row align-items-center justify-content-around text-center text-lg-left">
+                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2">
+                    
+                    {{!-- <a href="#" class="lead">Check this out</a> --}}
+                    <div id="faq-accordion">
+                        <div class="card mb-2 mb-md-3">
+                            <a href="#accordion-1" data-toggle="collapse" role="button" aria-expanded="false"
+                                class="p-3 p-md-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0 mr-2">查看更多</h6>
+                                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right"
+                                        class="icon icon-sm" data-inject-svg>
+                                </div>
+                            </a>
+                            <div class="collapse" id="accordion-1" data-parent="#faq-accordion">
+                                <div class="px-3 px-md-4 pb-3 pb-md-4">
+                                    亚洲产拍的概念出自于一间知名的产业拍卖公司和一家领先线上拍卖平台联
+                                    线为产业兑现创造一个突破性替代方案 – 亚洲线上产业拍卖。
+                                    <br>
+                                    <br>
+                                    私人产业拍卖在很多国家非常盛行，多数的业主趋向选择拍卖方式为兑现产
+                                    业的主要方式，这种方式让业主自主性的委任专业拍卖公司将其产业上拍，
+                                    让真实市场的需求决定产业的成交价，而非被个人因素所左右。这种方法既
+                                    公开，透明和参透率高，且增加买家的信心。透过亚洲产拍，我们重拾业主
+                                    秉持身为产业拥有人的规格与身份地位。
+                                    <br>
+                                    <br>
+                                    因新冠病毒和全球经济不确定性影响整个社会形态而产生的新常态加速了亚
+                                    洲产拍的成型。亚洲产拍协同拍卖的概念与线上即时竞标网站受欢迎的影响
+                                    力相互支持，绝对是兑现产业的第一选择。
+                                    <br>
+                                    <br>
+                                    亚洲产拍 – 出发大马，迈向亚洲。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1">
+                    <h2 class="h1">亚洲产拍的背景故事</h2>
+                    {{!-- <img src="images/company_background.jpg" alt="Image" class="img-fluid rounded shadow"> --}}
+                    {{!-- <img src="assets/img/about-2a.jpg" alt="Image"
+                        class="position-absolute p-0 col-4 col-xl-5 border border-white border-thick rounded-circle top left shadow-lg mt-5 ml-n5 ml-lg-n3 ml-xl-n5 d-none d-md-block"
+                        data-jarallax-element="-20 0"> --}}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section style="padding-top: 10px; ;">
+        
+        <div class="container" style="background-color: darkseagreen; padding-top:30px">
+            <div class="row align-items-center justify-content-around text-center text-lg-left">
+                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
+                        
+                        <div id="faq-accordion">
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-2" data-toggle="collapse" role="button" aria-expanded="false"
+                                    class="p-3 p-md-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">查看更多</h6>
+                                        <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right"
+                                            class="icon icon-sm" data-inject-svg>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-2" data-parent="#faq-accordion">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+                                        拍卖产业和买卖产业同样是产业销售方式，产业拍卖并不局限于银行抵押拍卖。
+                                        外国家都盛行以拍卖为首要的私人产业销售方式。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    {{!-- <img src="images/property_auction1.jpg" alt="Image" class="img-fluid rounded shadow"> --}}
+                    <h2 class="h1">拍卖还是直接卖？</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top: 10px; ;">
+        
+        <div class="container" style="background-color: orange; padding-top:30px">
+            <div class="row align-items-center justify-content-around text-center text-lg-left">
+                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2">
+                    
+                    {{!-- <a href="#" class="lead">Check this out</a> --}}
+                    <div id="faq-accordion">
+                        <div class="card mb-2 mb-md-3">
+                            <a href="#accordion-3" data-toggle="collapse" role="button" aria-expanded="false"
+                                class="p-3 p-md-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0 mr-2">查看更多</h6>
+                                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right"
+                                        class="icon icon-sm" data-inject-svg>
+                                </div>
+                            </a>
+                            <div class="collapse" id="accordion-3" data-parent="#faq-accordion">
+                                <div class="px-3 px-md-4 pb-3 pb-md-4">
+                                    <ul>
+                                        <li>
+                                            加快产业兑现处理，每月进行线上拍卖。
+                                        </li>
+                                        <li>
+                                            线上拍卖具有高关注量，参透性和长远影响力。
+                                        </li>
+                                        <li>
+                                            让业主秉持身为产业拥有人的规格与身份地位。
+                                        </li>
+                                        <li>
+                                            容易吸引买家进场竞标，省却繁琐的买卖过程，买家自己预算标价。
+                                        </li>
+                                        <li>
+                                            吸引有质素和合格的买家和租户。
+                                        </li>
+                                        <li>
+                                            产业拍卖资料和法律文件公开透明增加买家信心。
+                                        </li>
+                                        <li>
+                                            拍卖成功即时锁定买家签约拍卖协议。
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1">
+                    {{!-- <img src="images/online_auction.jpg" alt="Image" class="img-fluid rounded shadow"> --}}
+                    <h2 class="h1">为何线上拍卖为业主的首选？</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top: 10px; ;">
+        
+        <div class="container" style="background-color: yellowgreen; padding-top:30px">
+            <div class="row align-items-center justify-content-around text-center text-lg-left">
+                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 pl-lg-5 pl-xl-0">
+                    <div data-aos="fade-in" data-aos-offset="250">
+                        
+                        <div id="faq-accordion">
+                            <div class="card mb-2 mb-md-3">
+                                <a href="#accordion-4" data-toggle="collapse" role="button" aria-expanded="false"
+                                    class="p-3 p-md-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-0 mr-2">查看更多</h6>
+                                        <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right"
+                                            class="icon icon-sm" data-inject-svg>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="accordion-4" data-parent="#faq-accordion">
+                                    <div class="px-3 px-md-4 pb-3 pb-md-4">
+                                        <img src="images/mnp_logo.png" alt="mnp logo">
+                                        <br>
+                                        MNP 在 2004 年在马来西亚所创办，属于唯一一间全方位及首要得资产拍卖
+                                        公司。MNP 为唯一且连续 10 年得到国际标准企业（ISO 9001：2015 QMS）
+                                        质素管理认证的马来西亚拍卖公司。执业初期 MNP 为数间本地和外国银行
+                                        执行银行抵押有地产业拍卖，至今受数间银行如渣打银行，马来亚银行，艾
+                                        芬银行和国家产业机构所委任。
+                                        <br>
+                                        <br>
+                                        MNP 在 2011 年获得了由马来西亚创业促进会 (PUMM) 所颁发的 50 强企
+                                        业金奖，更在 2015 被马来西亚国家中小型企业机构 (SMECORP) 和国家标
+                                        准质素机构 (SIRIM) 联颁国家品牌奖状。 在 2014 年创下历史被马来西亚国
+                                        家银行（BNM）委任为自开国以来唯一一家的官方拍卖公司，也创下至今无
+                                        人能破的高成交记录。
+                                        <br>
+                                        <br>
+                                        MNP 中央拍卖行是唯一一家能和国际接轨的知名拍卖行。MNP 也是领先的
+                                        产业网上拍卖先锋，早在 2015 年就以线上混合线下拍卖在大型拍卖会取得
+                                        了卓越的成就。
+                                        <br>
+                                        <br>
+                                        官方网站: <a href="https://www.mnp.com.my/" target="_blank">www.mnp.com.my</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-6 col-xl-5">
+                    {{!-- <img src="images/auction_company.jpg" alt="Image" class="img-fluid rounded shadow"> --}}
+                    <h2 class="h1">MNP 拍卖行<br>亚洲产拍的推行者</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-top: 10px; ;">
+        
+        <div class="container" style="background-color: palevioletred; padding-top:30px">
+            <div class="row align-items-center justify-content-around text-center text-lg-left">
+                <div class="col-md-9 col-lg-6 col-xl-5 mb-4 mb-md-5 mb-lg-0 order-lg-2">
+                    
+                    {{!-- <a href="#" class="lead">Check this out</a> --}}
+                    <div id="faq-accordion">
+                        <div class="card mb-2 mb-md-3">
+                            <a href="#accordion-5" data-toggle="collapse" role="button" aria-expanded="false"
+                                class="p-3 p-md-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0 mr-2">查看更多</h6>
+                                    <img src="assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right"
+                                        class="icon icon-sm" data-inject-svg>
+                                </div>
+                            </a>
+                            <div class="collapse" id="accordion-5" data-parent="#faq-accordion">
+                                <div class="px-3 px-md-4 pb-3 pb-md-4">
+                                    <img src="images/best2bid_logo_black.png" alt="mnp logo">
+                                    <br>
+                                    best2bid 是马来西亚领先的线上即时拍卖竞标网站，它将来自本地区域和国
+                                    际竞标者带到拥有各色各样房地产，钱币，艺术品，古董，珠宝和收藏品拍
+                                    卖的竞标活动中心。
+                                    <br>
+                                    <br>
+                                    best2bid 平台的商家组织和大型机构包括马来西亚国家银行特别号码钞票拍
+                                    卖，马来亚银行进行房产业拍卖，美术馆知名艺术家杰作的揭幕和销售，新
+                                    加坡拍卖公司进行世界性钱币拍卖等等。
+                                    <br>
+                                    <br>
+                                    best2bid 网站在马来西亚和国外受高度认可， 其驱动线上拍卖极高成功率
+                                    被公认为是区域最成功的拍卖平台，平均浏览量为 1,900 万次。时间就是金
+                                    钱，best2bid 的概念就是以分秒必争的时间观念来达至物有所值的竞标效率
+                                    <br>
+                                    <br>
+                                    官方网站: <a href="https://www.mnp.com.my/" target="_blank">www.mnp.com.my</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-6 col-xl-5 order-lg-1">
+                    {{!-- <img src="images/online_auction1.jpg" alt="Image" class="img-fluid rounded shadow"> --}}
+                    <h2 class="h1">best2bid<br>产业线上竞标平台</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{!-- {{> footer}} --}}
+    <a href="#top" class="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll data-aos="fade-up"
+        data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+        <img src="assets/img/icons/interface/icon-arrow-up.svg" alt="Icon" class="icon bg-white" data-inject-svg>
+    </a>
+
+    {{> user-form}}
+    <div id="myModal-zh" class="modal-img">
+        <span class="close-img-zh">&times;</span>
+        <img class="modal-img-content" id="img01-zh">
+        <div id="caption-img"></div>
+    </div>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            document.querySelector('body').classList.add('loaded');
+        });
+        var modalzh = document.getElementById("myModal-zh");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var imgzh = document.getElementById("myImg-zh");
+        var modalImgzh = document.getElementById("img01-zh");
+        var captionTextzh = document.getElementById("caption-img");
+        imgzh.onclick = function () {
+            modalzh.style.display = "block";
+            modalImgzh.src = 'images/how_does_it_work_zh.png';
+            //captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var spanzh = document.getElementsByClassName("close-img-zh")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        spanzh.onclick = function () {
+            modalzh.style.display = "none";
+        }
+        var language = 'eng'
+        if (window.location.href.indexOf('home-zh') > 0) {
+            console.log("zh");
+            language = 'zh'
+            $(".zh").show();
+            $(".eng").hide();
+        } else if (window.location.href.indexOf('about-us-zh') > 0) {
+            console.log("about zh");
+            language = 'zh'
+            $(".zh").show();
+            $(".eng").hide();
+        } else {
+            console.log("eng");
+            $(".zh").hide();
+            $(".eng").show();
+        }
+
+        function propertyToSaleClick() {
+            let userInfoForm = $("#userInfoForm")[0];
+            let userInfo = {
+                name: $("#inputName").val(),
+                mobile: $("#phoneCountryCode").val() + $("#inputMobile").val(),
+                email: $("#inputEmail").val(),
+            }
+            console.log(userInfo);
+            if (userInfoForm.checkValidity() === false) {
+                userInfoForm.classList.add('was-validated');
+            } else {
+                $.ajax({
+                    type: 'POST',
+                    url: '/addUser/sale',
+                    data: userInfo,
+                    cache: false,
+                    success: function (result) {
+                        if (language == "eng") {
+                            window.location.href = "propertyForSale/" + result.userID + "/" + result
+                                .requestID;
+
+                        } else {
+                            window.location.href = "propertyForSale-zh/" + result.userID + "/" + result
+                                .requestID;
+
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        if (jqXHR.status == 500) {
+                        } else {
+                            console.log('Unexpected error.');
+                        }
+                    }
+                });
+            }
+        }
+
+        function propertyToRentClick(e) {
+            let userInfoForm = $("#userInfoForm")[0];
+            let userData = {
+                name: $("#inputName").val(),
+                mobile: $("#phoneCountryCode").val() + $("#inputMobile").val(),
+                email: $("#inputEmail").val(),
+            }
+            console.log(userData);
+
+            if (userInfoForm.checkValidity() === false) {
+                userInfoForm.classList.add('was-validated');
+            } else {
+                $.ajax({
+                    type: 'POST',
+                    url: '/addUser/rent',
+                    data: userData,
+                    cache: false,
+                    success: function (result) {
+                        console.log(result);
+                        if (language == "eng") {
+                            window.location.href = "propertyForRent/" + result.userID + "/" + result
+                                .requestID;
+
+                        } else {
+                            window.location.href = "propertyForRent-zh/" + result.userID + "/" + result
+                                .requestID;
+
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        if (jqXHR.status == 500) {
+                        } else {
+                            console.log('Unexpected error.');
+                        }
+                    }
+                });
+                e.preventDefault()
+            }
+        }
+    </script>
+
+</body>
+
+</html>

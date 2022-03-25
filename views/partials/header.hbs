@@ -1,0 +1,78 @@
+{{!-- <div class="navbar-container">
+    <nav class="navbar fixed-top navbar-expand-lg {{#if isWhite}} navbar-light {{else}} navbar-dark {{/if}}"  data-overlay >
+        <div class="container">
+            <a class="navbar-brand navbar-brand-dynamic-color fade-page" href="/">
+                <img alt="Realbidasia" src="/images/logo.png">
+            </a>
+            <div class="d-flex align-items-center order-lg-3">
+                <a style="color: white;" data-target="#user_form" data-toggle="modal" class="btn btn-primary ml-lg-4 mr-3 mr-md-4 mr-lg-0 d-none d-sm-block order-lg-3">Start Now</a>
+                <button aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                    <img alt="Navbar Toggler Open Icon" class="navbar-toggler-open icon icon-sm" data-inject-svg
+                        src="/assets/img/icons/interface/icon-menu.svg">
+                    <img alt="Navbar Toggler Close Icon" class="navbar-toggler-close icon icon-sm" data-inject-svg
+                        src="/assets/img/icons/interface/icon-x.svg">
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-3 order-lg-2 justify-content-lg-end" id="navigation-menu">
+                <ul class="navbar-nav my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" href="/about-us" role="button">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" href="/faq" role="button">FAQ</a>
+                    </li>
+                    <li class="nav-item" style="padding-top: 9px; padding-bottom: 9px">
+                        <a class="nav-link nav-item navbar-toggler" data-target="#user_form" data-toggle="modal" role="button" style="font-size: 16px;">Sign Up Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" href="/contact-us" role="button">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-item" id="myImg1">How does it work?</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a aria-expanded="false" aria-haspopup="true"
+                                class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid"
+                                href="#" role="button">Language</a>
+                            <div class="row dropdown-menu">
+                                <div class="col-auto" data-dropdown-content>
+                                    <div class="dropdown-grid-menu">
+                                        <a href="/" class="dropdown-item fade-page">English</a>
+                                        <a href="home-zh" class="dropdown-item fade-page">Chinese</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="myModal1" class="modal-img">
+        <span class="close-img">&times;</span>
+        <img class="modal-img-content" id="img011">
+        <div id="caption-img1"></div>
+    </div>
+<script>
+     var modal = document.getElementById("myModal1");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg1");
+        var modalImg = document.getElementById("img011");
+        var captionText = document.getElementById("caption-img1");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = 'images/how_does_it_work.jpeg';
+            //captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-img")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+</script> --}}

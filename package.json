@@ -1,0 +1,38 @@
+{
+  "name": "realbidasia",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=realbidasia:* npm run devstart"
+  },
+  "dependencies": {
+    "blueimp-file-upload": "^10.31.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-handlebars": "^5.0.0",
+    "express-session": "^1.17.1",
+    "firebase": "^7.15.5",
+    "firebase-admin": "^8.12.1",
+    "firebaseauth": "^1.0.0",
+    "fs": "0.0.1-security",
+    "hbs": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "location-href": "^1.0.0",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "node-grecaptcha-verify": "^2.0.1",
+    "nodemailer": "^6.4.17",
+    "path": "^0.12.7",
+    "stripe": "^8.129.0",
+    "uuid": "^8.2.0",
+    "uuidv1": "^1.6.14",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

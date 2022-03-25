@@ -1,0 +1,1492 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bootstrap HTML template and UI kit by Medium Rare">
+  <!-- Begin loading animation -->
+  <link href="/assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- End loading animation -->
+  <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet">
+  {{!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/basic.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.css" rel="stylesheet" type="text/css"> --}}
+  <link rel="stylesheet" type="text/css" href="/assets/css/dropzone.css">
+</head>
+
+<body style="padding: 0;">
+  <div class="loader">
+    <div class="loading-animation"></div>
+  </div>
+  <!-- <div class="alert alert-dismissible d-none d-md-block bg-primary-3 text-white py-4 py-md-3 px-0 mb-0 rounded-0 border-0">
+    <div class="container">
+        <div class="row no-gutters align-items-md-center justify-content-center">
+            <div class="col-lg-11 col-md d-flex flex-column flex-md-row align-items-md-center justify-content-lg-center">
+                <div class="mb-3 mb-md-0"><strong>Intro Sale</strong> $10 per license for Jumpstart's launch. Act fast, ends soon.</div>
+                <a class="btn btn-sm btn-success ml-md-3" target="_blank" href=#>Redeem Offer</a>
+            </div>
+            <div class="col-auto position-absolute right">
+                <button type="button" class="close p-0 position-relative" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                        <img src="/assets/img/icons/interface/icon-x.svg" alt="Close" class="icon icon-sm bg-white" data-inject-svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+  {{> newHeader}}
+
+  <section style="background-color: darkturquoise;">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex align-items-center" style="padding-top: 80px;padding-bottom: 20px;">
+          {{!-- <div class="d-inline-block p-3 p-md-4 rounded-circle bg-primary-alt">
+            <img src="/assets/img/icons/theme/general/settings-1.svg" alt="Confirmation Icon" class="icon bg-primary"
+              data-inject-svg="data-inject-svg">
+          </div> --}}
+          <div class="ml-4">
+            <h1 class="mb-2 rentPart" style="display: none;">出租产业</h1>
+            <h1 class="mb-2 salePart" style="display: none;">售卖产业</h1>
+            <div class="lead">设置财产信息，配套，付款，文件和协议。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="propertyInfo-tab" data-toggle="tab" href="#propertyInfo" role="tab"
+                aria-controls="propertyInfo" aria-selected="true">财产信息</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-disabled" id="packages-tab" data-toggle="tab" href="#packages" role="tab"
+                aria-controls="packages" aria-selected="false">配套</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-disabled" id="payment-tab" data-toggle="tab" href="#payment" role="tab"
+                aria-controls="payment" aria-selected="false">付款</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-disabled" id="uploadDocument-tab" data-toggle="tab" href="#uploadDocument"
+                role="tab" aria-controls="uploadDocument" aria-selected="false">上传文件</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-disabled" id="agreement-tab" data-toggle="tab" href="#agreement" role="tab"
+                aria-controls="agreement" aria-selected="false">协议</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="bg-light tab-content pt-5">
+    <div class="tab-pane fade show active" id="propertyInfo" role="tabpanel" aria-labelledby="propertyInfo-tab">
+      <div class="container">
+        {{!-- <div class="row mb-4 mb-lg-5">
+          <div class="col">
+            <div class="d-flex align-items-md-center">
+              <img src="/assets/img/avatars/male-3.jpg" alt="Avatar" class="avatar avatar-lg flex-shrink-0">
+              <div class="ml-4">
+                <button class="btn btn-sm btn-primary">Upload Avatar</button>
+                <div class="text-small mt-3">For best results, use an image at least 256px by 256px in either .jpg or
+                  .png format</div>
+              </div>
+            </div>
+            <hr class="mt-lg-5">
+          </div>
+        </div> --}}
+        <div class="row mb-4 mb-md-5 align-items-start">
+          <div class="col-lg-4 order-lg-2 mb-4 mb-lg-0 sticky-lg-top pl-lg-5">
+            {{!-- <div class="alert alert-primary">Your information is always kept encrypted and can never be accessed by
+              third parties.
+              <a href="#">View our Privacy Policy</a>
+            </div> --}}
+            <div class="alert alert-primary">
+              <text><b>Realbid.asia </b>亚洲产拍高度重视您的私隐和确保您的个人产业资料不被
+                滥用。
+              </text>
+
+              {{!-- <a href="#">阅读隐私政策</a> --}}
+            </div>
+          </div>
+          <div class="col-lg-8 border-lg-right pr-lg-5">
+            {{!-- <div class="row">
+              <div class="col">
+                <h3 class="rentPart" style="display: none;">Property for RENT</h3>
+                <h3 class="salePart" style="display: none;">Property for SALE</h3>
+              </div>
+            </div> --}}
+            <div class="row mb-lg-5">
+              <div class="col">
+                <h6>请写下您的个人资料如下 :</h6>
+              </div>
+            </div>
+            <form data-form-email novalidate id="propertyInfoForm" method="POST">
+              {{!-- <div class="row form-row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" value="Andrew">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" value="Smith">
+                  </div>
+                </div>
+              </div> --}}
+              <div class="form-group">
+                <label for="address">地址<span style="color: red;">*</span>:</label>
+                <input type="text" id="inputAddress" name="address" class="form-control" required>
+                <div class="invalid-feedback">
+                  请填写地址
+                </div>
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <div class="form-group">
+                <label for="city">城市/州属<span style="color: red;">*</span></label>
+                <input type="text" id="inputCity" class="form-control" required>
+                <div class="invalid-feedback">
+                  请填写城市
+                </div>
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <div class="form-group">
+                <label for="type">种类<span style="color: red;">*</span></label>
+                <select class="custom-select" id="selectType" required>
+                  <option value="" disabled selected hidden>请选择</option>
+                  <option value="Land">商用土地</option>
+                  <option value="Commercial Land">工业土地</option>
+                  <option value="Factory">工厂</option>
+                  <option value="Residential Land">居住土地</option>
+                  <option value="Agricultural Land">农业土地</option>
+                  <option value="Landed Commercia">有地商用</option>
+                  <option value="Highrise Commercial">高楼商用</option>
+                  <option value="Landed Residential">有地住宅</option>
+                  <option value="Apartment">高楼住宅</option>
+                  <option value="Luxury Apartment or Condominium">公寓</option>
+                  <option value="Mall or Complex Unit">高级公寓</option>
+                  <option value="Townhouse">广场单位</option>
+                  <option value="Other">其它</option>
+                </select>
+                <div class="invalid-feedback">
+                  请填写种类
+                </div>
+              </div>
+              <div class="form-group" id="otherType" style="display: none;">
+                <label for="other_Type">其它:</label>
+                <input type="text" id="inputOtherType" class="form-control"
+                  placeholder="Please fill up this field for other property type">
+              </div>
+              <div class="form-group">
+                {{!-- <div class="custom-control custom-switch mb-4">
+                  <input type="checkbox" class="custom-control-input" id="switch-1" checked="">
+                  <label class="custom-control-label" for="switch-1">Lift</label>
+                </div> --}}
+                <label for="lift">电梯：</label>
+                <select class="custom-select" id="selectLift">
+                  <option value="" disabled selected hidden>请选择</option>
+                  <option value="Yes">有</option>
+                  <option value="No">没有</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="size">面积<span style="color: red;">*</span></label>
+                <div class="row form-row">
+                  <div class="col-sm-6">
+                    <select class="custom-select" id="selectSize" required>
+                      <option value="" disabled selected hidden> 请选择 </option>
+                      <option value="Built-up">建筑</option>
+                      <option value="Land">土地</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      请填写面积
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" id="inputSize" class="form-control" required>
+                    <div class="invalid-feedback">
+                      请填写面积
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tenure">业权期限：</label>
+                <select class="custom-select" id="selectTenure">
+                  <option value="" disabled selected hidden>请选择</option>
+                  <option value="Freehold">永久</option>
+                  <option value="Leasehold">租赁</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="otherInfo">其它资料：</label>
+                <input type="text" id="inputOtherInfo" class="form-control">
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <div class="form-group">
+                <label>产业照片（如有）：</label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input2" id="inputPropertyImage">
+                  <label class="custom-file-label" for="job-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzonePropertyImage" method="POST" action="/uploadPropertyImage"></div> --}}
+                <div class="dropzone" id="dropzonePropertyImage">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;" 选择文件</h5> </div> </div> {{!-- <div class="dropzone" id="dropzonePropertyImage" >
+                                        <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                                            <h4 class="mb-0 f-w-600">选择文件</h4>
+                                        </div>
+                                    </div> --}} </div> <div class="form-group rentPart" style="display: none;">
+                      <label for="monthlyRental">首选每月租金 (马币)(如有)：</label>
+                      <input type="text" id="inputMonthlyRental" class="form-control">
+                      {{!-- <small>This will be displayed on your public profile</small> --}}
+                  </div>
+                  <div class="form-group salePart" style="display: none;">
+                    <label for="sellingPrice">Preferred Selling Price (RM)(if any):</label>
+                    <input type="text" id="inputSellingPrice" class="form-control">
+                    {{!-- <small>This will be displayed on your public profile</small> --}}
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label><span style="color: red;">*</span>必填</label>
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label for="agentCode">Agent Code:</label>
+                    <input type="text" id="inputAgentCode" class="form-control">
+                    {{!-- <small>This will be displayed on your public profile</small> --}}
+                  </div>
+                  <br>
+                  {{!-- <div class="form-group">
+                <label id="lblVerify">Click
+                  <a id="sendSMSCode" onclick="sendSMSCodeClick()"
+                    style="color: #009b72; text-decoration:underline; cursor: pointer;">HERE</a>
+                  to receive a code from your mobile number</label><br>
+                <div id="recaptcha-container"></div>
+                <label><span id="lblCode">Key in the code: (<span id="counter">120</span>s countdown)</span><br><input type="number" id="inputSMSCode" class="form-control"
+                    required></label>
+                <button class="btn btn-primary" type="button" id="verifySMSCode"
+                  onclick="verifySMSCodeClick()">VERIFY</button>
+              </div> --}}
+                  {{!-- <div id="sign-in-button">
+
+  </div> --}}
+                  <div class="d-flex flex-column justify-content-between">
+                    <div class="custom-control custom-checkbox mb-3 mb-md-0">
+                      <input type="checkbox" class="custom-control-input" id="job-agree" required>
+                      <label class="custom-control-label" for="job-agree">我同意 realbid.asia 亚洲产拍的个人私隐条例
+                      </label>
+                    </div>
+                    <br>
+                    点击提交即表示我是上述产页的合法拥有人/共同拥有人/受益人/受托人
+                    /董事（如果是公司产业），我方应赔偿,承担责任和保障亚洲产拍/MNP
+                    拍卖行/best2bid.com 因我所提供的信息或资料差异所引起的任何责任，
+                    损失，费用，损害赔偿，索赔或诉讼。
+                  </div>
+                  <br>
+                  <div class="d-none alert alert-danger w-100 my-md-3" role="alert" data-error-message>
+                    请准确填上所有资料。
+                  </div>
+                  <button class="btn btn-primary btn-loading rentPart" style="display: none;" type="submit"
+                    id="submitRentPropertyInfo" data-loading-text="Submit form"
+                    onclick="submitRentPropertyInfoClick()"><span>提交并继续</span></button>
+                  <button class="btn btn-primary btn-loading salePart" style="display: none;" type="submit"
+                    id="submitSalePropertyInfo" data-loading-text="Submit form"
+                    onclick="submitSalePropertyInfoClick()"><span>提交并继续</span></button>
+                  <div id="recaptcha-container"></div>
+                  <br>
+                  <br>
+                  <div class="form-group">
+                    <span style="color: darkgrey; font-size: 13px;">*按提交过后您将会收到一份电邮显示您所提交资料记录的链接，
+                      如有必要退出的话您可以再按电邮里的链接继续此流程。</span>
+                  </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="packages" role="tabpanel" aria-labelledby="packages-tab">
+      {{!-- <section class="bg-light" style="padding-top: 0;"> --}}
+      <div class="container" style="max-width: 1500px;">
+        <div class="row mb-4 mb-md-5 align-items-start">
+          <div class="col-lg-4 mb-4 mb-lg-0 pl-lg-5">
+            <div class="alert alert-primary" style="text-align: center;">
+              <div data-aos="fade-up" data-aos-delay="100"><b>realbid.asia [亚洲产拍]</b>
+                是马来西亚领先拍卖公司<br>MNP 拍卖行精心策划<br> ＋ </div>
+              <div data-aos="fade-up" data-aos-delay="200">百万关注力 best2bid
+                线上资产竞标网站所呈现的产业兑现方案。
+                <br>=</div>
+              <div class="fancy-border">
+                <b>
+                  时间效率<br>+<br>
+                  线上竞标<br>+<br>
+                  突破边界<br>+<br>
+                  接通市场<br>+<br>
+                  高注视率<br>+<br>
+                  对接新常态<br>=<br></b>
+                <p style="font-size: x-large;font-weight: bolder;">机会无限大！</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 order-lg-2 pr-lg-5" style="border-left: 1px solid lightgrey;">
+            <div class="row justify-content-center">
+              <div class="col-sm-9 col-md-7 col-lg-6 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                <div class="card card-body align-items-center shadow">
+                  {{!-- <div class="badge badge-success badge-pill mb-4">Best Value</div> --}}
+                  <div class="text-center mb-4">
+                    <h4 style="background-color: yellow;padding: 5px;color: blue;">DIY基本起拍！</h4>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                      <span class="h5 mb-0 mr-2" style="color: darkblue;">RM</span>
+                      <span class="display-3 mb-0" style="font-size: 80px; color: darkblue">388</span>
+                    </div>
+                    <div style="color: blue;">一次性线上拍卖</div>
+                    </div>
+                    <ul class="list-unstyled p-0">
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">业主选择起拍价，程序较为简易
+                          </h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">应用领先线上拍卖网站 – best2bid.com</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">策略性线上推广 - 至少10,000社媒关注</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">7天时间倒数线上拍卖
+                          </h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">专业产业浏览安排
+                          </h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">法律文件和事务处理 - 产权搜索与确认，准备租户协议和处理租赁签约服务
+                          </h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart" style="display: none;" style="text-align: center;">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 ml-3"><strong>租赁佣金为半个月的月租金</strong>
+                          </h6>
+                        </div>
+                      </li>
+                      <li class="my-3 salePart" style="display: none;" style="text-align: center;">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 ml-3"><strong>卖家佣金为落槌价的1%</strong>
+                          </h6>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="javascript:void(0)" id="basicPackageSubmit" onclick="packageClick('basic',388)"
+                      class="btn btn-lg btn-block btn-outline-primary">选择</a>
+                  </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-6 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card card-body align-items-center shadow">
+
+                    <div class="text-center mb-4">
+                      <h4 style="background-color: yellow;padding: 5px;color: blue;">POWER动力起拍！</h4>
+                      <div class="d-flex align-items-center justify-content-center mb-1">
+                        <span class="h5 mb-0 mr-2" style="color: darkblue;">RM</span>
+                        <span class="display-3 mb-0" style="font-size: 80px; color: darkblue;">688</span>
+                      </div>
+                      <div style="color: blue;">一次性线上拍卖<br><span style="color: green;">原价
+                          RM1688</span></div>
+                    </div>
+                    <ul class="list-unstyled p-0">
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">咨询策略性给力起拍价</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">应用领先线上拍卖网站 – best2bid.com</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">策略性线上特别推广 - 至少30,000社媒关注</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">14天时间倒数线上拍卖期限</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">专业产业浏览安排</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">法律文件和事务处理 - 产权搜索与确认，准备租户协议和处理租赁签约服务
+                          </h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3"> 产业拍照服务</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">个别产业适销性内容推广</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart salePart" style="display: none;">
+                        <div class="d-flex align-items-center">
+                          <div class="rounded-circle bg-success-alt">
+                            <img src="/assets/img/icons/interface/icon-check.svg" alt=" "
+                              class="m-2 icon icon-xs bg-success" data-inject-svg>
+                          </div>
+                          <h6 class="mb-0 ml-3">拍卖过后30天持续在网上刊登以吸引浏览和关注（如没拍出）</h6>
+                        </div>
+                      </li>
+                      <li class="my-3 rentPart" style="display: none;" style="text-align: center;">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 ml-3"><strong>租赁佣金为一个月的月租金</strong>
+                          </h6>
+                        </div>
+                      </li>
+                      <li class="my-3 salePart" style="display: none;" style="text-align: center;">
+                        <div class="d-flex align-items-center">
+                          <h6 class="mb-0 ml-3"><strong>卖家佣金为落槌价的2%</strong>
+                          </h6>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="javascript:void(0)" id="powerPackageSubmit" onclick="packageClick('power',688)"
+                      class="btn btn-lg btn-block btn-outline-primary">选择</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        {{!-- </section> --}}
+      </div>
+      <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+        <div class="container">
+          <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+            <div class="col-auto">
+              <h3 class="mb-sm-0">支付方式</h3>
+            </div>
+            {{!-- <div class="col-auto">
+            <button class="btn btn-success btn-sm">Add Payment Method</button>
+          </div> --}}
+          </div>
+          <div class="container">
+            <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+              <div class="col-auto">
+                <h5 class="mb-sm-0">我们已急不及待要开始为您籌備上拍卖事宜</h5>
+              </div>
+            </div>
+            <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+              <div class="col-auto">
+                <h5 class="mb-sm-0">请跟随以下步骤付款所同意的服务费用然后我们将引领你上载主要产业文件以合法化拍卖程序：
+                </h5>
+              </div>
+            </div>
+            <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+              <div class="m-2" data-aos="fade-up" data-aos-delay="100" style="background-color: yellow;">
+                <div class="media rounded align-items-center pl-3 pr-4 pl-md-4 pr-md-5 py-2">
+                  {{!-- <img src="/assets/img/icons/theme/devices/display-1.svg" alt="Monitor icon" class="icon mr-3 bg-primary"
+                  data-inject-svg> --}}
+                  <h5 class="mb-0" id="txtPackageSelected">DIY 基本起拍！[RM 388]</h5>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+              <div class="col-auto">
+                <h5 class="mb-sm-0">网上支付管道</h5>
+              </div>
+            </div>
+          </div>
+          <div id="faq-accordion">
+            <div class="card mb-2 mb-md-3">
+              <a href="#accordion" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6 class="mb-0 mr-2">STRIPE 互联网上付款服务</h6>
+                  <img src="/assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm"
+                    data-inject-svg>
+                </div>
+              </a>
+              <div class="collapse" id="accordion" data-parent="#faq-accordion">
+                <div class="px-3 px-md-4 pb-3 pb-md-4">
+                  <form class="container" id="stripePaymentForm">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-4 mb-3 mb-md-4">
+                        <div class="border rounded bg-white px-4 pb-4 pt-2">
+                          <div class="d-flex justify-content-between align-items-center mb-5">
+                            <img src="/assets/img/logos/payment/mastercard.svg" alt="Mastercard">
+                            <div class="dropdown">
+                              <button class="btn btn-sm btn-primary rounded-circle dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/img/icons/interface/icon-more-horizontal.svg" alt="More"
+                                  class="icon bg-white" data-inject-svg="data-inject-svg">
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">编辑</a>
+                                <a class="dropdown-item" href="#">移除</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-end">
+                            <div>
+                              <div class="h6 mb-2">•••• •••• •••• 3928</div>
+                              <div class="text-muted">Jonathan Wilson</div>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="radio-1" name="radio" class="custom-control-input" checked>
+                              <label class="custom-control-label" for="radio-1"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-3 mb-md-4">
+                        <div class="border rounded bg-white px-4 pb-4 pt-2">
+                          <div class="d-flex justify-content-between align-items-center mb-5">
+                            <img src="/assets/img/logos/payment/visa.svg" alt="Via">
+                            <div class="dropdown">
+                              <button class="btn btn-sm btn-primary rounded-circle dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/img/icons/interface/icon-more-horizontal.svg" alt="More"
+                                  class="icon bg-white" data-inject-svg="data-inject-svg">
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">编辑</a>
+                                <a class="dropdown-item" href="#">移除</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-end">
+                            <div>
+                              <div class="h6 mb-2">•••• •••• •••• 9921</div>
+                              <div class="text-muted">Jonathan Wilson</div>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="radio-2" name="radio" class="custom-control-input">
+                              <label class="custom-control-label" for="radio-2"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-3 mb-md-4">
+                        <div class="border rounded bg-white px-4 pb-4 pt-2">
+                          <div class="d-flex justify-content-between align-items-center mb-5">
+                            <img src="/images/fpx_icon.jpg" alt="fpx">
+                            <div class="dropdown">
+                              <button class="btn btn-sm btn-primary rounded-circle dropdown-toggle" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="/assets/img/icons/interface/icon-more-horizontal.svg" alt="More"
+                                  class="icon bg-white" data-inject-svg="data-inject-svg">
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">编辑</a>
+                                <a class="dropdown-item" href="#">移除</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-end">
+                            <div>
+                              <div class="h6 mb-2">jwilson@jumpstart.com</div>
+                              <div class="text-muted">Jonathan Wilson</div>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="radio-3" name="radio" class="custom-control-input">
+                              <label class="custom-control-label" for="radio-3"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <a class="btn btn-primary" style="color: #fff;" id="submitStripePayment"
+                        onclick="continuePayment()"><span>Continue</span></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!-- <div id="faq-accordion1">
+          <div class="card mb-2 mb-md-3">
+            <a href="#accordion-1" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h6 class="mb-0 mr-2">BANKING / ELECTRONIC TRANSFER</h6>
+                <img src="/assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm"
+                  data-inject-svg>
+              </div>
+            </a>
+            <div class="collapse" id="accordion-1" data-parent="#faq-accordion1">
+              <div class="px-3 px-md-4 pb-3 pb-md-4">
+                <form class="container">
+                  <div class="form-group">
+                    Bank: Malayan Banking Berhad
+                    <br>
+                    Branch: KOMTAR
+                    <br>
+                    Account Holder: MNP Auctioneers (Central) Sdn Bhd
+                    <br>
+                    Account Number: 557054618949
+                    <br>
+                    SWIFT Code: MBBEMYKL
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label>Payment Slip</label>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="paymentSlip-file">
+                      <label class="custom-file-label" for="paymentSlip-file">Choose file</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <a class="btn btn-primary" style="color: #fff;" id="submitPayment"><span>Continue</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> --}}
+        </div>
+      </div>
+      <div class="tab-pane fade" id="uploadDocument" role="tabpanel" aria-labelledby="uploadDocument-tab">
+        <div class="container">
+          <div class="row mb-4 mb-md-5 align-items-start">
+            <div class="col-lg-12 pr-lg-5">
+              <div class="row">
+                <div class="col">
+                  <h3>realbid.asia 亚洲产拍 – 线上拍卖处理事宜 - 产业文件上载</h3>
+                </div>
+              </div>
+              <p>尊贵的顾客您好，</p>
+              <p>身为超过 15 年资历的领先资产拍卖公司和国际标准认证 (ISO 9001:2015)
+                的质素管理系统(QMS)企业，我们秉持最专业和最尽职的服务态度。
+              </p>
+              <p>不相同于一般的程序，处理产业事宜必须提供产业相关的法律文件。提
+                供过程会有点繁琐但我们会尽力引导您完成兑现您的产业。我们也希望
+                您尽能力提供准确的文件以缩短拍卖处理的期限。
+              </p>
+              <p>感恩！</p>
+              <p>请<span style="color: red;">上载</span>以下产业文件副本 (PDF/JPEG 文件格式)：</p>
+            </div>
+            <div class="col-lg-8 pr-lg-5">
+              <form id="uploadDocumentsForm">
+                <div class="form-group">
+                  <label>房产买卖合约<span style="color: red;">*</span></label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="salesPurchaseAgreementFile" method="POST" action="/uploadSalesPurchaseAgreement">
+                  <label class="custom-file-label" for="spa-file">Choose file</label>
+                </div> --}}
+                  <div class="dropzone" id="dropzoneSalePurchaseAgreement">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>地契 / 分层地契:</label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="titleFile">
+                  <label class="custom-file-label" for="strata-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzoneStrataTitle" method="POST" action="/uploadDocuments/StrataTitle">
+                </div>--}}
+                  <div class="dropzone" id="dropzoneStrataTitle">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>拥有人个人身份证或护照:<span style="color: red;">*</span><br>
+                    <small style="color: red;">请注明 “for realbid.asia only”</small></label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="ownerICFile">
+                  <label class="custom-file-label" for="ic-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzoneOwnerIC" method="POST" action="/uploadDocuments/OwnerIC"></div> --}}
+                  <div class="dropzone" id="dropzoneOwnerIC">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>本地公司拥有者的表格 9 或 13, 24 和 49:</label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="companyOwenershipFile">
+                  <label class="custom-file-label" for="compForm-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzoneCompanyOwnership" method="POST"
+                  action="/uploadDocuments/CompanyOwnership"></div> --}}
+                  <div class="dropzone" id="dropzoneCompanyOwnership">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>门牌税单:<span style="color: red;">*</span></label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="assessmentBillFile">
+                  <label class="custom-file-label" for="assessmentBill-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzoneAssessmentBill" method="POST"
+                  action="/uploadDocuments/AssessmentBill"></div> --}}
+                  <div class="dropzone" id="dropzoneAssessmentBill">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>土地税单:<span style="color: red;">*</span></label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="quitRentFile">
+                  <label class="custom-file-label" for="quitRent-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzoneQuitRentBill" method="POST" action="/uploadDocuments/QuitRentBill">
+                </div> --}}
+                  <div class="dropzone" id="dropzoneQuitRentBill">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>最新的银行贷款欠单（如有借贷）:<br>
+                    <small style="color: red;">欠单需显示余额贷款。可以接受过时 6 至 12 个月</small>
+                  </label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="loanRepaymentFile">
+                  <label class="custom-file-label" for="repayment-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzoneQuitRentBill" method="POST" action="/uploadDocuments/QuitRentBill">
+                </div> --}}
+                  <div class="dropzone" id="dropzoneLoanRepayment">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>产业照片 (最多10张) 选择 DIY 基本起拍！必须附上产业照片: <span style="color: red;">*</span></label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="propertyImageFile">
+                  <label class="custom-file-label" for="propertyImage-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzonePropertyImage2" method="POST"
+                  action="/uploadDocuments/PropertyImage2"></div> --}}
+                  <div class="dropzone" id="dropzonePropertyImage2">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>额外文件 1</label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="addDoc1File">
+                  <label class="custom-file-label" for="addDoc1-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzoneAddDoc1" method="POST" action="/uploadDocuments/AddDoc1"></div> --}}
+                  <div class="dropzone" id="dropzoneAddDoc1">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>额外文件 2</label>
+                  {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="addDoc2File">
+                  <label class="custom-file-label" for="addDoc2-file">Choose file</label>
+                </div> --}}
+                  {{!-- <div class="dropzone" id="dropzoneAddDoc2" method="POST" action="/uploadDocuments/AddDoc2"></div> --}}
+                  <div class="dropzone" id="dropzoneAddDoc2">
+                    <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                      <h5 style="color: #555A64;">选择文件</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="address">再确认产业注册地址:</label>
+                  <input type="text" id="reconfirmAddress" name="address" class="form-control">
+                  {{!-- <div class="invalid-feedback">
+                    Please type Registered/Postal Address.
+                  </div> --}}
+                  {{!-- <small>This will be displayed on your public profile</small> --}}
+                </div>
+                <div class="form-group">
+                  <label for="sellingPoint">产业卖点:<br>(限500个字)</label>
+                  <textarea id="sellingPoint" rows="6" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="remark">注释:<br>(限500个字)</label>
+                  <textarea id="remark" rows="6" class="form-control"></textarea>
+                </div>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="custom-control custom-checkbox mb-3 mb-md-0">
+                    <input type="checkbox" class="custom-control-input" id="sentByMail">
+                    <label class="custom-control-label" for="sentByMail">将于邮寄方式发过来</label>
+                  </div>
+                </div>
+                <br>
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="custom-control custom-checkbox mb-3 mb-md-0">
+                    <input type="checkbox" class="custom-control-input" id="uploadDeclaration" checked>
+                    <label class="custom-control-label" for="uploadDeclaration">
+                      <span style="font-weight: 700;">宣誓
+                        <!--DECLARATION--></span><br>
+                      <!-- By clicking submit, I hereby declare that I'm the legal owner / proprietor
+                        / joint-owner / joint-proprietor / beneficial owner / trustee / company
+                        director (in case of incorporated ownership) of the abovementioned
+                        property and I shall indemnify and keep realbid.asia/MNP Auctioneers
+                        (Central) Sdn. Bhd/best2bid.com against any liability, loss, expense,
+                        damages, claims, suits, actions, demands or proceedings, whether arising
+                        from any discrepancy of the information or document provided herein. <br>-->
+                      点击提交即表示我是上述产页的合法拥有人/共同拥有人/受益人/受托人
+                      /董事（如果是公司产业），我方应赔偿,承担责任和保障亚洲产拍/MNP
+                      拍卖行/best2bid.com 因我所提供的文件，信息或资料差异所引起的任何
+                      责任，损失，费用，损害赔偿，索赔或诉讼。
+                    </label>
+                  </div>
+                </div>
+                <br>
+                <div>
+                  <a class="btn btn-secondary" style="color: black;" id="saveDocument"><span>保存</span></a>
+                  {{!-- <a class="btn btn-primary" style="color: #fff;" id="submitDocument"><span>Continue</span></a> --}}
+                  <button class="btn btn-primary" style="color: #fff;" id="submitDocument"
+                    onclick="submitDocumentClick(event)"><span>继续</span></button>
+                </div>
+                <br>
+                <a class="btn btn-warning" href="about-us-zh" style="color: black;">关于 realbid.asia 亚洲产拍</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="agreement" role="tabpanel" aria-labelledby="agreement-tab">
+        <div class="container">
+          {{!-- <div class="row mb-4 mb-lg-5">
+          <div class="col">
+            <div class="d-flex align-items-md-center">
+              <img src="/assets/img/avatars/male-3.jpg" alt="Avatar" class="avatar avatar-lg flex-shrink-0">
+              <div class="ml-4">
+                <button class="btn btn-sm btn-primary">Upload Avatar</button>
+                <div class="text-small mt-3">For best results, use an image at least 256px by 256px in either .jpg or
+                  .png format</div>
+              </div>
+            </div>
+            <hr class="mt-lg-5">
+          </div>
+        </div> --}}
+          <div class="row mb-4 mb-md-5 align-items-start">
+            <div class="col-lg-8 pr-lg-5">
+              <div class="row">
+                <div class="col">
+                  <h3 class="rentPart" style="display: none;">realbid.asia 亚洲产拍 线上租赁产业拍卖</h3>
+                  <h3 class="salePart" style="display: none;">realbid.asia 亚洲产拍 线上售卖产业拍卖</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h6 style="color: blue;">产业地址</h6>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h6 style="border: solid; padding:8px;">至 POWER 动力起拍的订阅客户，在提交亚洲产拍的线
+                    上拍卖表格之后，我们的工作人员会在 24 工作小时内
+                    联络您以提供特定的咨询服务。
+                  </h6>
+                </div>
+              </div>
+              <div class="row mb-lg-5">
+                <div class="col">
+                  <h6 class="rentPart" style="display: none;">(DIY 基本起拍！必填):
+                  </h6>
+                  {{!-- <h6 class="salePart" style="display: none;">请填写以下重要拍卖资料 (DIY 基本起拍！订阅客户必填):
+                </h6> --}}
+                  <h6 class="salePart" style="display: none;">(DIY 基本起拍！订阅客户必填):
+                  </h6>
+                </div>
+              </div>
+              <form id="agreementForm">
+                {{!-- <div class="row form-row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" value="Andrew">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" value="Smith">
+                  </div>
+                </div>
+              </div> --}}
+                {{!-- <div class="form-group">
+                <label for="address">Registered/Postal Address*:</label>
+                <input type="text" id="address" class="form-control">
+              </div> --}}
+                <div class="rentPart" style="display: none;">
+                  <div class="form-group">
+                    <label for="tenancyPeriod">租赁期限</label>
+                    <select class="custom-select" id="tenancyPeriod">
+                      <option value="" disabled selected hidden>请选择</option>
+                      <option value="1">12个月</option>
+                      <option value="2">24个月</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="commencementDate">租賃生效日期：<span style="color: red;">*</span>:</label>
+                    <input type="date" id="commencementDate" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <div class="row form-row">
+                      <div class="col-sm-6">
+                        <label for="tenancyPeriod">租赁期限更新选项<span style="color: red;">*</span>
+                        </label><br>
+                        <div class="custom-control custom-switch mb-4">
+                          <input type="checkbox" class="custom-control-input" id="switch-1">
+                          {{!-- <input type="checkbox" class="custom-control-input" id="isRenew"> --}}
+                          <label class="custom-control-label" for="switch-1">是</label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6" id="renewOption" style="display: none;">
+                        <select class="custom-select" id="tenancyPeriod">
+                          <option value="" disabled selected hidden>请选择</option>
+                          <option value="1">12个月</option>
+                          <option value="2">24个月</option>
+                        </select>
+                        <small><span style="color: red;">*</span>條件說明雙方必須同意租賃更新的每月租金</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="securityDeposit">保证金 (马币)
+                    </label>
+                    <select class="custom-select" id="securityDeposit">
+                      <option value="" disabled selected hidden>请选择</option>
+                      <option value="1">1 个月租</option>
+                      <option value="2">2 个月租</option>
+                      <option value="3">个别数目</option>
+                    </select>
+                  </div>
+                  <div class="form-group" id="otherSecurityDeposit" style="display: none;" required>
+                    <label for="other_security_deposit">个别数目:</label>
+                    <input type="text" id="inputOtherSecurityDeposit" class="form-control" placeholder="请填写保证金">
+                  </div>
+                  <div class="form-group">
+                    <label for="utilityDeposit">水电费抵押金 (马币)
+                    </label>
+                    <select class="custom-select" id="utilityDeposit">
+                      <option value="" disabled selected hidden>请选择</option>
+                      <option value="1">1 个月</option>
+                      <option value="2">个别数目</option>
+                    </select>
+                  </div>
+                  <div class="form-group" id="otherUtilityDeposit" style="display: none;">
+                    <label for="other_utility_deposit">个别数目:</label>
+                    <input type="text" id="inputOtherUtilityDeposit" class="form-control" placeholder="请填写水电费抵押金">
+                  </div>
+                  <div class="form-group">
+                    <label for="otherDeposit1">其他抵押金</label>
+                    <div class="row form-row">
+                      <div class="col-sm-6">
+                        <input type="text" id="otherDeposit1" class="form-control" placeholder="抵押金说明">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" id="otherDepositAmount1" class="form-control" placeholder="抵押金数目(RM)">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="otherDeposit2">其他抵押金</label>
+                    <div class="row form-row">
+                      <div class="col-sm-6">
+                        <input type="text" id="otherDeposit2" class="form-control" placeholder="抵押金说明">
+                      </div>
+                      <div class="col-sm-6">
+                        <input type="text" id="otherDepositAmount2" class="form-control" placeholder="抵押金数目(RM)">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="bio">其他:<br>(限500个字)</label>
+                    <textarea id="agreementRemark" rows="6" class="form-control"></textarea>
+                  </div>
+                </div>
+
+                <div class="salePart" style="display: none;">
+                  <div class="form-group">
+                    <label for="reservePrice">线上拍卖保留价（马币）：</label>
+                    <input type="text" id="reservePrice" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="minDeposit">线上竞标底金 （马币）：</label>
+                    <input type="text" id="minDeposit" class="form-control">
+                    <small>(5% (高度建议以吸引竞标者) 10%)</small>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>请阅读，理解和同意以下线上拍卖<a href="javascript:void(null);"
+                      onclick="showTAndC()">协议条件(英文版)。</a>如有任何疑问可以联络我们的客服热线
+
+                  </label>
+                </div>
+                <div class="form-group" id="tandcform" style="display: none;">
+                  <ol>
+                    <li>This auction agreement binds all the information and
+                      document selected or submitted by the property owner
+                      within realbid.asia.</li>
+                    <li>Upon acknowledging receipt of full and complete property
+                      legal documents and online auction package fee,
+                      readbid.asia will conduct the online auction within 30 days.</li>
+                    <li class="rentPart" style="display: none;">Subject to Item 4, the property owner agrees that the
+                      package’s rental sale’s premium (for any successful online
+                      auction) shall be deductible from any deposit collected from
+                      the successful bidder. Balance deposit shall be remitted to
+                      the property owner’s designated bank account within seven
+                      (7) days upon full deposit collected. The property owner is
+                      committed to settle whatever outstanding due to
+                      realbid.asia immediately upon demand. No fee or rental
+                      sale’s premium be refunded at whatsoever circumstance.
+                    </li>
+                    <li class="salePart" style="display: none;">Subject to Item 4, the property owner agrees that the
+                      package’s seller premium (for any successful online auction)
+                      shall be deductible from any deposit collected from the
+                      successful bidder. Balance deposit shall be remitted to the
+                      property owner’s designated bank account within seven (7)
+                      days. Property owner committed to settle whatever amount due to realbid.asia. No fee or seller’s
+                      premium be refunded
+                      at whatsoever circumstance.
+                    </li>
+                    <li class="rentPart" style="display: none;">The property owner undertakes to acknowledge and execute
+                      the tenancy contract, tenancy agreement or equivalent and
+                      any relevant tenancy-related legal document(s) upon the
+                      successful bidder executed the same. The property owner
+                      shall execute the said contract or agreement no later than
+                      seven (7) days after the same is executed by the successful
+                      bidder or upon presented by realbid.asia (whichever later),
+                      failing which the auction sale shall be terminated without
+                      further reference. The said contract or agreement to be
+                      executed may be presented by way of electronic form or
+                      manual (printed) form, in whichever way that we deemed fit
+                      and proper.</li>
+                    <li class="salePart" style="display: none;">
+                      The property owner undertakes to acknowledge and execute
+                      the sale contract, sale and purchase agreement or
+                      equivalent and any relevant sale and transfer-related legal
+                      document(s) upon the successful bidder executed the same.
+                      The property owner shall execute the said agreement no
+                      later than seven (7) days after executed by the successful
+                      bidder, failing which the sale will be terminated. The
+                      agreement to be executed may be presented by way of
+                      electronic form or manual (printed) form, in whichever way
+                      that we deemed fit and proper.
+                    </li>
+                    <li class="rentPart" style="display: none;">The property owner acknowledges that realbid.asia has
+                      the
+                      discretion to determine the bidder registration deposit sum
+                      for the property for strategy planning purpose, nevertheless,
+                      the full deposit upon successful online auction shall be paid
+                      by the successful bidder not more than 7 days from online
+                      auction date.</li>
+                    <li class="salePart" style="display: none;">
+                      The property owner acknowledges that realbid.asia has the
+                      discretion to determine the bidder registration deposit for
+                      the property for strategy planning purpose, nevertheless,
+                      the full deposit upon successful online auction shall be paid
+                      by the successful bidder not more than 14 days from online
+                      auction date.
+                    </li>
+                    <li class="salePart" style="display: none;">
+                      Upon successful online auction sale, the balance purchase
+                      price is to be paid by successful bidder within three (3)
+                      months with extension of one (1) month with interest of six
+                      percent (6%) per annum on daily basis from the date of the
+                      fully executed sale and purchase agreement, sale contract,
+                      developer’s consent or State’s consent, whichever later.
+                    </li>
+                    <li class="salePart" style="display: none;">
+                      Upon successful sale and upon the sale contract or sale and
+                      purchase agreement fully executed, the property owner
+                      should engage appropriate legal professional to process the
+                      sale.
+                    </li>
+                    <li class="rentPart" style="display: none;">The property owner shall ensure that the property is
+                      readily
+                      available to deliver possession to the successful bidder for
+                      tenancy purpose.</li>
+                    <li>This agreement (and any part of realbid.asia) is a legal
+                      document between the property owner and realbid.asia,
+                      thus the property owner shall strictly prohibited from redistribution and third party duplication
+                      and shall keep it
+                      strictly private and confidential.</li>
+                    <li>The property owner shall indemnify and keep
+                      realbid.asia/MNP Auctioneers (Central) Sdn.
+                      Bhd/best2bid indemnified against any liability, loss, expense,
+                      damages, claims, suits, actions, demands or proceedings,
+                      whether arising from the discrepancy of the information
+                      provided and non-compliance of the auction agreement
+                      herein.</li>
+                    <li>In case of any discrepancy, the English version of the auction
+                      agreement shall prevail.</li>
+                  </ol>
+                  <ol>线上拍卖协议条件 (中文版)
+                    <li>本线上拍卖协议约束业主在亚洲产拍(realbid.asia)中选择或提交的所有信息和文件。</li>
+                    <li class="rentPart" style="display: none;">一旦确认收到完整的产业法律文件和服务费用后，亚洲产拍 (readbid.asia)
+                      将在30天内进行线上租赁拍卖。
+                    </li>
+                    <li class="salePart" style="display: none;">一旦确认收到完整的产业资料，法律文件和服务费用后，亚洲产拍 (readbid.asia)
+                      将在30天内进行线上拍卖。
+                    </li>
+                    <li class="rentPart" style="display: none;">
+                      业主同意亚洲产拍 (realbid.asia)从线上拍卖得标者收取的任何押金中直接扣除租赁拍卖佣金，
+                      余款将在 7 天内汇给业主所提供的银行户口 (视第 4 条条件而定)。
+                      业主承诺在亚洲产拍 (realbid.asia)要求下结清任何欠款。所付之款项在任何情况下都不於退还。</li>
+                    <li class="salePart" style="display: none;">
+                      业主同意亚洲产拍 (realbid.asia)从线上拍卖得标者收取的任何押金中直接扣除卖方佣金，
+                      余款在 7 天内汇给产业拥有者所提供的银行户口 (视第 4 条条件而定)。
+                      业主承诺在亚洲产拍 (realbid.asia)要求下结清任何欠款。所付之款项在任何情况下都不於退还。</li>
+                    <li class="rentPart" style="display: none;">
+                      业主承诺在得标者签署租赁协议后签署并执行该租赁协议，
+                      租赁合约或同等协议和签署同意任何相关的法律文件。
+                      业主承诺在得标者签署后不迟于七（7）天签署该协议，否则将即时终止租赁协议。
+                      依情况而定，该协议可以通过电子或印刷真本形式来签署。</li>
+                    <li class="salePart" style="display: none;">
+                      业主承诺在得标者签署买卖协议后签署并执行买卖协议，
+                      买卖合约或同等协议和签署同意任何相关的法律文件。
+                      业主承诺在得标者签署后不迟于七（7）天签署该协议，否则将终止出售。
+                      依情况而定，该协议可以通过电子或印刷真本形式来签署。
+                    </li>
+                    <li>业主同意亚洲产拍 (realbid.asia)有权自行决定为战略规划目的而决定该物业的注册竞标保证金。
+                      尽管如此，得标者在拍卖得标后的最长七（7）天内必须缴付全额底金。</li>
+                    <li class="salePart" style="display: none;">
+                      作为买卖协议的主要条件之一，在线上拍卖成功拍出后，
+                      得标者需在三（3）个月内支付余额购买价，必要时该期限可以自动延长一（1）个月，
+                      得标者需付该延长期限的 6 巴仙 (6% per annum) 年利率。
+                      买卖协议的完成期限由买卖合同，发展商同意信或州政府的同意信 (如有)的日期算起，以日期较晚者算起为准。
+                    </li>
+                    <li class="salePart" style="display: none;">在签署买卖协议后，业主应该聘用律师以处理产业转移事宜。</li>
+                    <li class="rentPart" style="display: none;">业主必须确定得标者在履行租赁拍卖条件后交付其产业。</li>
+                    <li>本拍卖协议（与 realbid.asia 的任何部分）是业主与亚洲产拍 (realbid.asia)之间的重要法律文件，
+                      因此，业主必须严格禁止第三方复制与分发，并且严格保密。</li>
+                    <li class="rentPart" style="display: none;">
+                      产业拥有者应赔偿,承担责任和保障亚洲产拍/MNP 拍卖行/best2bid.com 因产业拥有者提供的文件，
+                      信息或资料差异或不遵守拍卖协议所引起的任何责任，损失，费用，损害赔偿，索赔或诉讼。</li>
+                    <li class="salePart" style="display: none;">
+                      业主应赔偿,承担责任和保障亚洲产拍/MNP 拍卖行/best2bid.com 因产业拥有者提供的文件，
+                      信息或资料差异或不遵守拍卖协议所引起的任何责任，损失，费用，损害赔偿，索赔或诉讼。</li>
+                    <li>如在语言表述上有任何差异，此拍卖协议以英文版本为准。</li>
+                  </ol>
+                </div>
+                {{!-- <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <br />
+                <input type="submit" value="Submit">
+              </div> --}}
+                <div class="d-flex flex-column justify-content-between">
+                  <div class="custom-control custom-checkbox mb-3 mb-md-0">
+                    <input type="checkbox" class="custom-control-input" id="job-agree2" checked>
+                    <label class="custom-control-label" for="job-agree">我同意以上的线上拍卖协议</label>
+
+                  </div>
+                </div>
+                <br>
+                {{!-- <a class="btn btn-primary" style="color: #fff;" id="submitAgreement"><span>Submit</span></a> --}}
+                <button class="btn btn-primary rentPart" type="button" style="color: #fff; display: none;"
+                  id="submitRentAgreement" onclick="submitRentAgreementClick()"><span>提交</span></button>
+                <button class="btn btn-primary salePart" type="button" style="color: #fff; display: none;"
+                  id="submitSaleAgreement" onclick="submitSaleAgreementClick()"><span>提交</span></button>
+                <br>
+                <br>
+                <a class="btn btn-warning" href="about-us-zh" style="color: black;">关于 readbid.asia 亚洲产拍]</a>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  {{!-- {{> footer}} --}}
+  <a href="#top" class="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll data-aos="fade-up"
+    data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+    <img src="/assets/img/icons/interface/icon-arrow-up.svg" alt="Icon" class="icon bg-white" data-inject-svg>
+  </a>
+  <div class="modal fade" id="congratulationPropertyInfo" tabindex="-1" role="dialog" aria-hidden="true"
+    style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="w-100 pt-4">
+            <div class="d-inline-block">
+              {{!-- <img src="/images/success.jpg" alt="Confirmation Icon" style="width: 100%;"> --}}
+
+            </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="/assets/img/icons/interface/icon-x.svg" alt="Icon">
+            </span>
+          </button>
+        </div>
+        <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5" style="color: black; font-weight: 700;">
+          <div class="form-group">
+            {{!-- <label id="lblVerify">Click
+                  <a id="sendSMSCode" onclick="sendSMSCodeClick()"
+                    style="color: #009b72; text-decoration:underline; cursor: pointer;">HERE</a>
+                  to receive a code from your mobile number</label><br>
+                <div id="recaptcha-container"></div> --}}
+            <label><span id="lblCode">Key in the code: (<span id="counter">120</span>s countdown)</span><br><input
+                type="text" id="inputSMSCode" class="form-control" required></label>
+            {{!-- <button class="btn btn-primary" type="button" id="verifySMSCode"
+                  onclick="verifySMSCodeClick()">VERIFY</button> --}}
+          </div>
+          <p>恭喜您！您距离兑现您产业的方案又迈前一大步了！</p>
+
+          <button class="btn btn-primary btn-block btn-loading" id="congratulationPropertyInfoSubmit"
+            onclick="submitRentPropertyInfoClick2()"><span>继续</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="pleaseCheck" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="w-100 pt-4">
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="/assets/img/icons/interface/icon-x.svg" alt="Icon">
+            </span>
+          </button>
+        </div>
+        <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5" style="color: black; font-weight: 700;">
+          <p>You must accept terms and conditions to continue</p>
+          <button class="btn btn-primary btn-block btn-loading" id="closeCheckModal"><span>OK</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="requiredFieldModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="w-100 pt-4">
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="/assets/img/icons/interface/icon-x.svg" alt="Icon">
+            </span>
+          </button>
+        </div>
+        <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5" style="color: black; font-weight: 700;">
+          <p>Please fill in required fields</p>
+          <button class="btn btn-primary btn-block btn-loading" id="closeRequiredFieldModal"><span>OK</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="congratulation" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="w-100 pt-4">
+            <div class="d-inline-block">
+              <img src="/images/success.jpg" alt="Confirmation Icon">
+            </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="/assets/img/icons/interface/icon-x.svg" alt="Icon">
+            </span>
+          </button>
+        </div>
+        <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5" style="color: black; font-weight: 700;">
+          <p>恭喜！您已完成全部的步骤！</p>
+          <p>您的提交编号为 <span style="color: red;" id="txtsubmission">XXXXXX (submission reference number)</span></p>
+          <p>我们的客服将在 24 工作小时内联络您。</p>
+          <p>谢谢！</p>
+          <button class="btn btn-primary btn-block btn-loading" id="okCongratulate"><span>好的</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div id="myModal-zh" class="modal-img">
+    <span class="close-img-zh">&times;</span>
+    <img class="modal-img-content" id="img01-zh">
+    <div id="caption-img"></div>
+  </div>
+  <!-- Required vendor scripts (Do not remove) -->
+  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+  <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+  <script type="text/javascript" src="/assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
+
+  <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+  <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+  <script type="text/javascript" src="/assets/js/aos.js"></script>
+  <!-- Clipboard (copies content from browser into OS clipboard) -->
+  <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
+  <!-- Fancybox (handles image and video lightbox and galleries) -->
+  <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+  <!-- Flatpickr (calendar/date/time picker UI) -->
+  <script type="text/javascript" src="/assets/js/flatpickr.min.js"></script>
+  <!-- Flickity (handles touch enabled carousels and sliders) -->
+  <script type="text/javascript" src="/assets/js/flickity.pkgd.min.js"></script>
+  <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+  <script type="text/javascript" src="/assets/js/ion.rangeSlider.min.js"></script>
+  <!-- Isotope (masonry layouts and filtering) -->
+  <script type="text/javascript" src="/assets/js/isotope.pkgd.min.js"></script>
+  <!-- jarallax (parallax effect and video backgrounds) -->
+  <script type="text/javascript" src="/assets/js/jarallax.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jarallax-video.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jarallax-element.min.js"></script>
+  <!-- jQuery Countdown (displays countdown text to a specified date) -->
+  <script type="text/javascript" src="/assets/js/jquery.countdown.min.js"></script>
+  <!-- jQuery smartWizard facilitates steppable wizard content -->
+  <script type="text/javascript" src="/assets/js/jquery.smartWizard.min.js"></script>
+  <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+  <script type="text/javascript" src="/assets/js/plyr.polyfilled.min.js"></script>
+  <!-- Prism (displays formatted code boxes) -->
+  <script type="text/javascript" src="/assets/js/prism.js"></script>
+  <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+  <script type="text/javascript" src="/assets/js/scrollMonitor.js"></script>
+  <!-- Smooth scroll (animation to links in-page)-->
+  <script type="text/javascript" src="/assets/js/smooth-scroll.polyfills.min.js"></script>
+  <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+  <script type="text/javascript" src="/assets/js/svg-injector.umd.production.js"></script>
+  <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+  <script type="text/javascript" src="/assets/js/twitterFetcher_min.js"></script>
+  <!-- Typed text (animated typing effect)-->
+  <script type="text/javascript" src="/assets/js/typed.min.js"></script>
+  <!-- Required theme scripts (Do not remove) -->
+  <script type="text/javascript" src="/assets/js/theme.js"></script>
+  {{!-- Google recaptcha --}}
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- Removes page load animation when window is finished loading -->
+  <script type="text/javascript">
+    window.addEventListener("load", function () {
+      document.querySelector('body').classList.add('loaded');
+    });
+  </script>
+  <!--Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+  <!-- File Upload Dropzone-->
+  {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js"></script> --}}
+  <script src="/assets/js/dropzone.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+  <script>
+    var stripePublicKey = '{{_stripePublicKey}}'
+    console.log(stripePublicKey)
+  </script>
+  <script>
+    var url = $(location).attr('href');
+    var arr = url.split('/');
+    var _requestID ="{{_requestID}}"
+    var _userID = "{{_userID}}"
+    var userid = "{{_userID}}"
+    var requestid = "{{_requestID}}"
+  </script>
+
+  <script src="/assets/js/u_dropzone_script.js"></script>
+  {{!-- Javascript function --}}
+  <!--U: Firestore Users Info-->
+  <script type="text/javascript" src="/assets/js/u_firestore_user_info.js"></script>
+</body>
+
+</html>

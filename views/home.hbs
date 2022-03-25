@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Real Bid Asia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap HTML template and UI kit by Medium Rare">
+    <!-- Begin loading animation -->
+    <link href="assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- End loading animation -->
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet">
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+</head>
+
+<body style="padding: 0;">
+    <div class="loader">
+        <div class="loading-animation"></div>
+    </div>
+    <!-- <div class="alert alert-dismissible d-none d-md-block bg-primary-3 text-white py-4 py-md-3 px-0 mb-0 rounded-0 border-0">
+    <div class="container">
+        <div class="row no-gutters align-items-md-center justify-content-center">
+            <div class="col-lg-11 col-md d-flex flex-column flex-md-row align-items-md-center justify-content-lg-center">
+                <div class="mb-3 mb-md-0"><strong>Intro Sale</strong> $10 per license for Jumpstart's launch. Act fast, ends soon.</div>
+                <a class="btn btn-sm btn-success ml-md-3" target="_blank" href=#>Redeem Offer</a>
+            </div>
+            <div class="col-auto position-absolute right">
+                <button type="button" class="close p-0 position-relative" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                        <img src="assets/img/icons/interface/icon-x.svg" alt="Close" class="icon icon-sm bg-white" data-inject-svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+    {{> newHeader}}
+
+    <div data-overlay class="bg-primary-3 jarallax text-white" data-jarallax data-speed="0.2">
+        <img src="images/promo_cover.jpg" alt="Background" class="jarallax-img opacity-30">
+        <section class="pb-0">
+            <div class="container pb-5">
+                <div class="row justify-content-center text-center">
+                    <div class="col-xl-8 col-lg-10 col-md-11">
+                        {{!-- <a data-fancybox href="https://vimeo.com/166034462#t=32s"
+                            class="btn btn-lg btn-light rounded-circle mb-4 mb-md-5" data-aos="zoom-in"
+                            data-aos-delay="400">
+                            <img src="assets/img/icons/interface/icon-media-play.svg" alt="Media Play Icon"
+                                class="icon icon-lg bg-dark pl-1" data-inject-svg>
+                        </a> --}}
+                        {{!-- <h1 class="display-3" data-aos="fade-up" data-aos-delay="100">ALERT! You’re Not Benefited from
+                            The Housing Policy!</h1> --}}
+                        <img src="images/warning-logo.png" style="width: 90px;">
+
+                        {{!-- <p class="lead" data-aos="fade-up" data-aos-delay="100">It’s Real! If you’re the secondary
+                            property owner, the new normal will be destroying the value of your property!
+                        </p> --}}
+                        <p class="lead" data-aos="fade-up" data-aos-delay="100">Worried about your property investment? Experiencing vacant possession?
+                            The recent Covid 19 pandemic has no doubt affected the property industry and
+                            also the value of your property.
+                        </p>
+
+                        <p class="lead" data-aos="fade-up" data-aos-delay="200">
+                            How to Breakthrough The Challenging New Normal Toward Your Property？
+                        </p>
+                        {{!-- <p class="lead" data-aos="fade-up" data-aos-delay="300"
+                            style="color: chartreuse; font-weight: 700;">
+                            CASHOUT Your Property the REAL BID Way!
+                            Be it Rent or Sale!
+                        </p> --}}
+                        {{!-- <h1 class="display-3" data-aos="fade-up" data-aos-delay="300" style="color: chartreuse;">CASHOUT
+                            Your Property the REAL BID Way!
+                            Be it Rent or Sale!</h1> --}}
+                        <h1 class="display-5" data-aos="fade-up" data-aos-delay="300" style="color: chartreuse;">CASHOUT
+                            Your Property the REALBID Way!
+                            Look Here! You Can Rent Out Fast or Sell it Quick!</h1>
+
+                        <p class="lead" data-aos="fade-up" data-aos-delay="500">
+                            Take charge of your property!
+                        </p>
+                        {{!-- <p class="lead" data-aos="fade-up" data-aos-delay="400">
+                            Let <span style="font-weight: 700;">realbid.asia</span> be Your Self-Help! Move on with our
+                            Online Bidding
+                            Platform Processing now!
+                        </p> --}}
+                        <p class="lead" data-aos="fade-up" data-aos-delay="400">
+                            Let <span style="font-weight: 700;">realbid.asia</span> be Your Self-Help
+                        </p>
+
+                        {{!-- <p class="lead" data-aos="fade-up" data-aos-delay="500" style="margin-bottom: 60px;">
+                            Make no mistake! Take charge of the Waiver of RPGT!
+                        </p> --}}
+                        <p class="lead" data-aos="fade-up" data-aos-delay="400" style="margin-bottom: 10px;">
+                            Let’s CASHOUT through <span style="font-weight: 700;">realbid.asia</span> Now!
+                        </p>
+
+                        {{!-- <p data-aos="fade-up" data-aos-delay="600"> --}}
+                        <a class="btn btn-secondary" style="color: black; cursor: pointer; font-size: 1.2rem;"
+                            id="learnMore"><span>Learn
+                                More</span></a>
+                        {{!-- </p> --}}
+                        {{!-- <div class="d-flex flex-column flex-sm-row justify-content-center mt-4 mt-md-5"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <a href="#" class="btn btn-primary btn-lg mx-sm-2 my-1 my-sm-0">View Demos</a>
+                            <a href="#" class="btn btn-outline-light btn-lg mx-sm-2 my-1 my-sm-0">Purchase</a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+            <div class="divider divider-bottom bg-white" style="background-color: transparent !important;"></div>
+        </section>
+    </div>
+    <section class="p-0 bg-primary text-white row no-gutters">
+        {{!-- <div class="col-lg-5 col-xl-6">
+            <img src="images/property_auction.jpg" alt="Image" class="w-100 h-100">
+            <div class="divider divider-side bg-primary d-none d-lg-block" style="max-width: inherit;"></div>
+        </div> --}}
+        <div class="container pb-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-12 col-12 col-xl-10">
+                    <section>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-xl-10">
+                                    <h3 class="h1" id="friendlyTip">Friendly tip</h3>
+                                    <p class="lead">
+                                        Property auction sale and sub-sale are both the
+                                        property disposal method, property auction is not limited to bank
+                                        foreclosure auction. Property sale by way of auction is a norm and
+                                        popular choice in many countries.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <img src="images/mnp_logo.png" alt="mnp company logo">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        Online Auction Powered by
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                       <img src="images/best2bid_logo_black.png" alt="best2bid logo">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        A Signature Project by
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {{!-- <div class="col-auto">
+                                            <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+                                                <li class="my-3 mx-3 mx-lg-4" style="text-align: center;">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <img src="images/mnp_logo.png" alt="mnp company logo">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <img src="images/best2bid_logo_black.png" alt="best2bid logo">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="my-3 mx-3 mx-lg-4" style="text-align: center;">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            Online Auction Powered by
+                                                        </div>
+                                                        <div class="col-6">
+                                                            A Signature Project by
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div> --}}
+                                    </div>
+                                    <br>
+                                    <div class="row justify-content-center">
+                                        <button class="btn btn-warning" style="color: black;">Welcome Property Agent! Partner
+                                            with Us Now! Call us at +6016-419 3313 to develop your rewarding future!</button>
+                                    </div>
+                                    <br>
+                                    <div class="row justify-content-center">
+                                        <button class="btn btn-secondary about-us" style="color: black;">About
+                                            realbid.asia</button>
+                                    </div>
+                                    <br>
+                                    <div class="row justify-content-center">
+                                        <a class="btn btn-secondary" style="color: black; cursor: pointer; font-size: 1rem;" id="learnMore2"><span>Learn
+                                                More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row section-title justify-content-center text-center">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <h3 class="display-4" id="marketTip" >Covid19</h3>
+                    <div class="lead">Covid19 has deepened the already-deepening property market. How
+                        harmful can it be, for property owners?
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {{!-- <div class="col-lg-6 mb-3 mb-lg-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4 mb-3 mb-sm-0">
+                            <img src="images/access_supply.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col">
+                            <h4>Access supply</h4>
+                            <p>The market has never run short of choices
+                            </p>
+                        </div>
+                    </div>
+                </div> --}}
+                <div class="col-lg-4 mb-3 mb-lg-5">
+                    <div class="row align-items-center" style="padding-top: 5px; padding-bottom: 5px;">
+                        <div class="col-6">
+                            <img src="images/access_supply.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <h4>Access supply</h4>
+                            <p>The market has never run short of choices
+                            </p>
+                            {{!-- <a href="#">Learn More</a> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-5">
+                    <div class="row align-items-center" style="padding-top: 5px; padding-bottom: 5px;">
+                        <div class="col-6">
+                            <img src="images/new_housing.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <h4>Government policies favouring new housing</h4>
+                            <p>Cruel competition</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-5">
+                    <div class="row align-items-center" style="padding-top: 5px; padding-bottom: 5px;">
+                        <div class="col-6">
+                            <img src="images/property_insight.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            {{!-- <h4>Property info and insight easy access</h4> --}}
+                            <h4>Easy Access of Property Info and Insight</h4>
+                            <p>DIY specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-5">
+                    <div class="row align-items-center" style="padding-top: 5px; padding-bottom: 5px;">
+                        <div class="col-6">
+                            <img src="images/mobile_device.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <h4>Mobile device beats all odd</h4>
+                            <p>Online dictates everything
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 mb-lg-5">
+                    <div class="row align-items-center" style="padding-top: 5px; padding-bottom: 5px;">
+                        <div class="col-6">
+                            <img src="images/virtual_office.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6">
+                            <h4>Online business, virtual office </h4>
+                            <p>Less property demand
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <p><a class="btn btn-secondary" style="color: black; cursor: pointer; font-size: 1.2rem;"
+                        id="whatNext"><span>What's
+                            Next?</span></a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary-3">
+        <div class="container">
+
+            <div class="row section-title justify-content-center text-center">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <h4 class="display-4" style="font-size: 2rem; color: white;" id="situation">At this time, many
+                        property owners are
+                        facing the
+                        following
+                        problems: </h4>
+                    {{!-- <div class="lead">At this time, many property owners are facing the following
+                        situations:</div> --}}
+                </div>
+            </div>
+            {{!-- <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="images/rent_out1.jpg"
+                                alt="Image accompanying Circle testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>Cannot rent out, cannot sell</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-9.jpg"
+                                alt="Image accompanying Kanba testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>Price can be lowered, but can it sell? Can it rent?</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-5.jpg"
+                                alt="Image accompanying Treva testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>The longer the unit is vacant, the riskier the maintenance
+                                problem</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-5.jpg"
+                                alt="Image accompanying Treva testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>No ROI but maintenance cost remain
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-5.jpg"
+                                alt="Image accompanying Treva testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>Similar property is plenty, only the best stay
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-5.jpg"
+                                alt="Image accompanying Treva testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>Keep dragging time hopping to gain higher, but end up with
+                                higher holding cost and opportunity cost
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+            <div class="row align-items-center justify-content-center" style="padding-bottom: 25px;">
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+
+                        <div class="text-center">
+                            {{!-- <img src="images/rent_out.jpg" alt="Image" class="img-fluid rounded"> --}}
+                            {{!-- <img class="img-fluid rounded" src="images/rent_out1.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    {{!-- <div class="rounded-circle bg-success-alt">
+                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg>
+                    </div> --}}
+                                    <h5 class="mb-0 ml-3">Cannot rent out, cannot sell too</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/lower_price.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">Price can be lowered, but is it sellable? Is it rentable?</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/maintenance_prob.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">The longer the unit is vacant, the riskier the maintenance
+                                        problem</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="400"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/maintenance_cost.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">No ROI but maintenance cost remain</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="500"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/similar_property.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">Similar property is plenty, only the best stay
+                                    </h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="600"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/holding_cost.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">Keep dragging time hopping to gain higher, but end up with
+                                        higher holding cost and opportunity cost</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center" style="margin-bottom: 0;"
+                data-aos="fade-up" data-aos-delay="700">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <h5 style="font-size: 1.5rem; color: white;">The above problems and deepening situation
+                        give rise to the absolute
+                        solution – realbid.asia！
+                    </h5>
+                    {{!-- <div class="lead">At this time, many property owners are facing the following
+                        situations:</div> --}}
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center" data-aos="fade-up" data-aos-delay="0"
+                style="margin-bottom: 5px;">
+                <button class="btn btn-warning" id="keyHere" style="color: black;">The Key is HERE!</button>
+            </div>
+            <div class="row section-title justify-content-center text-center" data-aos="fade-up" data-aos-delay="0">
+                <button class="btn btn-secondary about-us" style="color: black;">About
+                    realbid.asia</button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary">
+        <div class="container">
+            <div class="text-white">
+                <div class="row section-title justify-content-center text-center">
+                    <div class="col-md-9 col-lg-8 col-xl-7">
+                        <h3 class="display-4" id="whyUs">Why Us?</h3>
+                        <div class="lead">We highly recommend realbid.asia as your property’s best
+                            solution for the new normal! Why? </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-isotope-collection>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body"
+                        style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">And the best part is, realbid.asia is absolutely AFFORDABLE!
+                            </strong>
+                        </p>
+                        {{!-- <p>
+                            Don’t forget the opportunity cost that you are
+                            overlooking for keep holding the property
+                        </p> --}}
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body"
+                        style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">Brings REAL MARKET DEMAND, Not Any Single
+                                Preference</strong>
+                        </p>
+                        <p>
+                            The actual property market dictates your property and
+                            not by any personal preference nor human factor.
+                            Marketable starting price is the key too
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body"
+                        style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">QUALIFIED Bidder! No Time Wastage
+                            </strong>
+                        </p>
+                        <p>
+                            Real bid filters qualified Bidder toward entering approved property online bidding coverage,
+                            to be guided by the timed auction process.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body"
+                        style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">REAL Timetable & Closing Point!</strong>
+                        </p>
+                        <p>
+                            Instead of all kind of uncertainty, realbid.asia provides real
+                            timetable for the entire process.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body"
+                        style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">The World is toward ONLINE, We are DUAL!
+                            </strong>
+                        </p>
+                        <p>
+                            realbid.asia focuses and make full use of the online
+                            presence, while not forgetting traditional approach
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body"
+                        style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">OPEN, Transparent & Touch Ground!</strong>
+                        </p>
+                        <p>
+                            Stop waiting hopelessly and stop being factored
+                            unnecessarily but connecting truly the entire market
+                            toward spotting your property
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body"
+                        style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">REDUCING Holding COST!</strong>
+                        </p>
+                        <p>
+                            Don’t forget the opportunity cost that you are
+                            overlooking for keep holding the property
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body"
+                        style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            {{!-- &ldquo;It's
+                            <mark data-aos='highlight-text' data-aos-delay='200'>the best theme I've ever
+                                purchased.</mark>Excellent and easy code, excellent design.&rdquo; --}}
+                            <strong style="color: #2C3038;">TIME is MONEY!</strong>
+                        </p>
+                        <p>
+                            Creating urgency through time countdown to achieve
+                            valued-for-money kind of bidding efficiency
+                        </p>
+                        {{!-- <div class="d-flex">
+                            <img src="assets/img/avatars/envato.svg" alt="Themeforest">
+                            <div class="ml-3">
+                                <h6 class="mb-0">felipelobo328</h6>
+                                <div>Themeforest Customer</div>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center text-white" style="margin-bottom: 10px;">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <div class="lead">With realbid.asia, your destiny is on your hand!</div>
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center text-white" style="margin-bottom: 10px;">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <div class="lead">Ready to CASHOUT your property? <a id="toUserForm2" class="btn btn-warning"
+                            style="color: black;">Yes! Continue!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <button class="btn btn-secondary about-us" style="color: black;">About
+                        realbid.asia</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{!-- {{> footer}} --}}
+    <a href="#top" class="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll data-aos="fade-up"
+        data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+        <img src="assets/img/icons/interface/icon-arrow-up.svg" alt="Icon" class="icon bg-white" data-inject-svg>
+    </a>
+    <div class="modal fade" id="user_form" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    {{!-- <div class="w-100 pt-4">
+                        <div class="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-alt">
+                            <img src="" alt="Confirmation Icon" class="icon bg-primary"
+                                data-inject-svg="data-inject-svg">
+                        </div>
+                    </div> --}}
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="assets/img/icons/interface/icon-x.svg" alt="Icon">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5">
+                    <form data-form-email novalidate id="userInfoForm" method="POST">
+                    <div class="form-group">
+                        <labe>realbid.asia strictly prioritizes your personal privacy. Your personal
+                            information will not be used for any other thing except for
+                            realbid.asia.</label>
+                    </div>
+                    <div class="form-group">
+                        <labe>Kindly fill in your personal particular as follow:</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-name">Full Name (as per IC):</label>
+                        <input id="inputName" name="contact-name" type="text" class="form-control"
+                            placeholder="Type here" required>
+                        <div class="invalid-feedback">
+                            Please type your name.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-mobile">Mobile Contact Number:</label>
+                        <input id="inputMobile" name="contact-mobile" type="number" class="form-control"
+                            placeholder="011xxxxxxx" required>
+                        <div class="invalid-feedback">
+                            Please provide your contact number.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-email">Email:</label>
+                        <input id="inputEmail" name="contact-email" type="email" class="form-control"
+                            placeholder="you@yoursite.com" required>
+                        <div class="invalid-feedback">
+                            Please provide your email address.
+                        </div>
+                    </div>
+                    {{!-- <div class="form-group">
+                                    <label>Please choose one of the followings:</label>
+                                </div> --}}
+                    <div class="d-none alert alert-success w-100 my-md-3" role="alert" data-success-message>
+                        Thanks, a member of our team will be in touch shortly.
+                    </div>
+                    <div class="d-none alert alert-danger w-100 my-md-3" role="alert" data-error-message
+                        id="userFormErrorMsg">
+                        Please fill all fields correctly.
+                    </div>
+                    <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible"
+                        data-badge="bottomleft"></div>
+                    {{!-- <button class="btn btn-primary btn-block btn-loading" type="submit"
+                            data-loading-text="Submit form">
+                            <svg class="icon bg-white" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Icon For Loading</title>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g>
+                                        <polygon points="0 0 24 0 24 24 0 24" opacity="0"></polygon>
+                                    </g>
+                                    <path
+                                        d="M12,4 L12,6 C8.6862915,6 6,8.6862915 6,12 C6,15.3137085 8.6862915,18 12,18 C15.3137085,18 18,15.3137085 18,12 C18,10.9603196 17.7360885,9.96126435 17.2402578,9.07513926 L18.9856052,8.09853149 C19.6473536,9.28117708 20,10.6161442 20,12 C20,16.418278 16.418278,20 12,20 C7.581722,20 4,16.418278 4,12 C4,7.581722 7.581722,4 12,4 Z"
+                                        fill="#000000" fill-rule="nonzero"
+                                        transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) ">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span>Submit</span>
+                        </button> --}}
+                    <button class="btn btn-primary btn-block btn-loading" data-loading-text="Submit form"
+                        id="propertyForRentButton" onclick="propertyToRentClick()"><span>Property for RENT</span></button>
+                    <button class="btn btn-primary btn-block btn-loading" type="submit" data-loading-text="Submit form"
+                        id="propertyForSaleButton" onclick="propertyToSaleClick()"><span>Property for SALE</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+        window.addEventListener("load", function () {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
+    {{!-- Javascript function --}}
+    <script type="text/javascript">
+        $("#toUserForm").click(function () {
+            $("#user_form").modal("show");
+        });
+        $("#toUserForm2").click(function () {
+            $("#user_form").modal("show");
+        });
+        /*$("#propertyForRentButton").click(function () {
+            window.location.href = "propertyForRent";
+        });
+        $("#propertyForSaleButton").click(function () {
+            window.location.href = "propertyForSale"
+        });*/
+        $(".about-us").click(function () {
+            window.location.href = "about-us"
+        });
+        $("#learnMore").click(function () {
+            var scrollTo;
+            var container = $('html,body');
+            scrollTo = $('#friendlyTip');
+            container.animate({
+                scrollTop: scrollTo.offset().top - 100
+            });
+        });
+        $("#learnMore2").click(function () {
+            var scrollTo;
+            var container = $('html,body');
+            scrollTo = $('#marketTip');
+            container.animate({
+                scrollTop: scrollTo.offset().top - 100
+            });
+        });
+        $("#whatNext").click(function () {
+            var scrollTo;
+            var container = $('html,body');
+            scrollTo = $('#situation');
+            container.animate({
+                scrollTop: scrollTo.offset().top - 100
+            });
+        });
+        $("#keyHere").click(function () {
+            var scrollTo;
+            var container = $('html,body');
+            scrollTo = $('#whyUs');
+            container.animate({
+                scrollTop: scrollTo.offset().top - 100
+            });
+        });
+    </script>
+    <!--<script>
+        $("#userInfoForm").validate({
+            rules: {
+                field: {
+                    required: true,
+                    email: true
+                }
+            }
+        });
+    </script>-->
+    <!--U: Firestore Users Info-->
+    <script type="text/javascript" src="assets/js/u_firestore_user_info.js"></script>
+    {{!-- setTimeout(() => {
+                console.log($("#userFormErrorMsg").is(":visible"));
+                if ($("#userFormErrorMsg").is(":visible") != true) {
+                    window.location.href = "propertyForRent";
+                }
+            }, 500); --}}
+</body>
+
+</html>

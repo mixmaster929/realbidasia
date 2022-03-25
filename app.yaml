@@ -1,0 +1,17 @@
+runtime: nodejs10
+
+handlers:
+- url: /*
+  secure: always
+  script: auto
+
+- url: /static/assets/(.+)
+  static_files: public/assets/\1
+  upload: public/assets/(.*)  
+
+automatic_scaling:
+  max_instances: 2
+
+env_variables:
+  db_root: "PROD"
+  YOUR_DOMAIN: "https://realbidasia.appspot.com"

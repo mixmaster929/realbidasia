@@ -1,0 +1,1488 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bootstrap HTML template and UI kit by Medium Rare">
+  <!-- Begin loading animation -->
+
+  <link href="/assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- End loading animation -->
+  <link href="/assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet">
+  {{!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/basic.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.css" rel="stylesheet" type="text/css"> --}}
+  <link rel="stylesheet" type="text/css" href="/assets/css/dropzone.css">
+</head>
+
+<body style="padding: 0;">
+  <div class="loader">
+    <div class="loading-animation"></div>
+  </div>
+  <!-- <div class="alert alert-dismissible d-none d-md-block bg-primary-3 text-white py-4 py-md-3 px-0 mb-0 rounded-0 border-0">
+    <div class="container">
+        <div class="row no-gutters align-items-md-center justify-content-center">
+            <div class="col-lg-11 col-md d-flex flex-column flex-md-row align-items-md-center justify-content-lg-center">
+                <div class="mb-3 mb-md-0"><strong>Intro Sale</strong> $10 per license for Jumpstart's launch. Act fast, ends soon.</div>
+                <a class="btn btn-sm btn-success ml-md-3" target="_blank" href=#>Redeem Offer</a>
+            </div>
+            <div class="col-auto position-absolute right">
+                <button type="button" class="close p-0 position-relative" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                        <img src="/assets/img/icons/interface/icon-x.svg" alt="Close" class="icon icon-sm bg-white" data-inject-svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+  {{> newHeader}}
+
+  <section style="background-color: darkturquoise;">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex align-items-center" style="padding-top: 80px;padding-bottom: 20px;">
+          {{!-- <div class="d-inline-block p-3 p-md-4 rounded-circle bg-primary-alt">
+            <img src="/assets/img/icons/theme/general/settings-1.svg" alt="Confirmation Icon" class="icon bg-primary"
+              data-inject-svg="data-inject-svg">
+          </div> --}}
+          <div class="ml-4">
+            <h1 class="mb-2 rentPart" style="display: none;">Property for RENT</h1>
+            <h1 class="mb-2 salePart" style="display: none;">Property for SALE</h1>
+            <div class="lead">Set up property info, packages, payment, document and agreement.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="propertyInfo-tab" data-toggle="tab" href="#propertyInfo" role="tab"
+                aria-controls="propertyInfo" aria-selected="true">Property Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-disabled" id="packages-tab" data-toggle="tab" href="#packages" role="tab"
+                aria-controls="packages" aria-selected="false">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-disabled" id="payment-tab" data-toggle="tab" href="#payment" role="tab"
+                aria-controls="payment" aria-selected="false">Payment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-disabled" id="uploadDocument-tab" data-toggle="tab" href="#uploadDocument"
+                role="tab" aria-controls="uploadDocument" aria-selected="false">Upload Document</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-disabled" id="agreement-tab" data-toggle="tab" href="#agreement" role="tab"
+                aria-controls="agreement" aria-selected="false">Agreement</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="bg-light tab-content pt-5">
+    <div class="tab-pane fade show active" id="propertyInfo" role="tabpanel" aria-labelledby="propertyInfo-tab">
+      <div class="container">
+        {{!-- <div class="row mb-4 mb-lg-5">
+          <div class="col">
+            <div class="d-flex align-items-md-center">
+              <img src="/assets/img/avatars/male-3.jpg" alt="Avatar" class="avatar avatar-lg flex-shrink-0">
+              <div class="ml-4">
+                <button class="btn btn-sm btn-primary">Upload Avatar</button>
+                <div class="text-small mt-3">For best results, use an image at least 256px by 256px in either .jpg or
+                  .png format</div>
+              </div>
+            </div>
+            <hr class="mt-lg-5">
+          </div>
+        </div> --}}
+        <div class="row mb-4 mb-md-5 align-items-start">
+          <div class="col-lg-4 order-lg-2 mb-4 mb-lg-0 sticky-lg-top pl-lg-5">
+            <div class="alert alert-primary">Your information is always kept encrypted and can never be accessed by
+              third parties.
+              <a href="#">View our Privacy Policy</a>
+            </div>
+          </div>
+          <div class="col-lg-8 border-lg-right pr-lg-5">
+            {{!-- <div class="row">
+              <div class="col">
+                <h3 class="rentPart" style="display: none;">Property for RENT</h3>
+                <h3 class="salePart" style="display: none;">Property for SALE</h3>
+              </div>
+            </div> --}}
+            <div class="row mb-lg-5">
+              <div class="col">
+                <h6>Please fill in your property information :</h6>
+              </div>
+            </div>
+            <form data-form-email novalidate id="propertyInfoForm" method="POST">
+              {{!-- <div class="row form-row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" value="Andrew">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" value="Smith">
+                  </div>
+                </div>
+              </div> --}}
+              <div class="form-group">
+                <label for="address">Registered/Postal Address<span style="color: red;">*</span>:</label>
+                <input type="text" id="inputAddress" name="address" class="form-control" required>
+                <div class="invalid-feedback">
+                  Please type Registered/Postal Address.
+                </div>
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <div class="form-group">
+                <label for="city">City/State<span style="color: red;">*</span></label>
+                <input type="text" id="inputCity" class="form-control" required>
+                <div class="invalid-feedback">
+                  Please type City/State.
+                </div>
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <div class="form-group">
+                <label for="type">Type<span style="color: red;">*</span></label>
+                <select class="custom-select" id="selectType" required>
+                  <option value="" disabled selected hidden>Select an option</option>
+                  <option value="Land">Land</option>
+                  <option value="Commercial Land">Commercial Land</option>
+                  <option value="Factory">Factory</option>
+                  <option value="Residential Land">Residential Land</option>
+                  <option value="Agricultural Land">Agricultural Land</option>
+                  <option value="Landed Commercia">Landed Commercial</option>
+                  <option value="Highrise Commercial">Highrise Commercial</option>
+                  <option value="Landed Residential">Landed Residential</option>
+                  <option value="Apartment">Apartment</option>
+                  <option value="Luxury Apartment or Condominium">Luxury Apartment or Condominium</option>
+                  <option value="Mall or Complex Unit">Mall or Complex Unit</option>
+                  <option value="Townhouse">Townhouse</option>
+                  <option value="Other">Other</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select type.
+                </div>
+              </div>
+              <div class="form-group" id="otherType" style="display: none;">
+                <label for="other_Type">Other:</label>
+                <input type="text" id="inputOtherType" class="form-control"
+                  placeholder="Please fill up this field for other property type">
+              </div>
+              <div class="form-group">
+                {{!-- <div class="custom-control custom-switch mb-4">
+                  <input type="checkbox" class="custom-control-input" id="switch-1" checked="">
+                  <label class="custom-control-label" for="switch-1">Lift</label>
+                </div> --}}
+                <label for="lift">Lift</label>
+                <select class="custom-select" id="selectLift">
+                  <option value="" disabled selected hidden>Select an option</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="size">Size<span style="color: red;">*</span></label>
+                <div class="row form-row">
+                  <div class="col-sm-6">
+                    <select class="custom-select" id="selectSize" required>
+                      <option value="" disabled selected hidden>Select an option</option>
+                      <option value="Built-up">Built-up</option>
+                      <option value="Land">Land</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select size.
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" id="inputSize" class="form-control" required>
+                    <div class="invalid-feedback">
+                      Please type zize.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tenure">Tenure</label>
+                <select class="custom-select" id="selectTenure">
+                  <option value="" disabled selected hidden>Select an option</option>
+                  <option value="Freehold">Freehold</option>
+                  <option value="Leasehold">Leasehold</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="otherInfo">Other information:</label>
+                <input type="text" id="inputOtherInfo" class="form-control">
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <div class="form-group">
+                <label>Property Image(s) (if any):</label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input2" id="inputPropertyImage">
+                  <label class="custom-file-label" for="job-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzonePropertyImage" method="POST" action="/uploadPropertyImage"></div> --}}
+                <div class="dropzone" id="dropzonePropertyImage">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+                {{!-- <div class="dropzone" id="dropzonePropertyImage" >
+                                        <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                                            <h4 class="mb-0 f-w-600">Drop files here or click to upload.</h4>
+                                        </div>
+                                    </div> --}}
+              </div>
+              <div class="form-group rentPart" style="display: none;">
+                <label for="monthlyRental">Preferred Monthly Rental (RM)(if any):</label>
+                <input type="text" id="inputMonthlyRental" class="form-control">
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <div class="form-group salePart" style="display: none;">
+                <label for="sellingPrice">Preferred Selling Price (RM)(if any):</label>
+                <input type="text" id="inputSellingPrice" class="form-control">
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <br>
+              <div class="form-group">
+                <label><span style="color: red;">*</span>Compulsory</label>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="agentCode">Agent Code:</label>
+                <input type="text" id="inputAgentCode" class="form-control">
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <br>
+              {{!-- <div class="form-group">
+                <label id="lblVerify">Click
+                  <a id="sendSMSCode" onclick="sendSMSCodeClick()"
+                    style="color: #009b72; text-decoration:underline; cursor: pointer;">HERE</a>
+                  to receive a code from your mobile number</label><br>
+                <div id="recaptcha-container"></div>
+                <label><span id="lblCode">Key in the code: (<span id="counter">120</span>s countdown)</span><br><input type="number" id="inputSMSCode" class="form-control"
+                    required></label>
+                <button class="btn btn-primary" type="button" id="verifySMSCode"
+                  onclick="verifySMSCodeClick()">VERIFY</button>
+              </div> --}}
+              {{!-- <div id="sign-in-button">
+
+  </div> --}}
+              <div class="d-flex flex-column justify-content-between">
+                <div class="custom-control custom-checkbox mb-3 mb-md-0">
+                  <input type="checkbox" class="custom-control-input" id="job-agree" required>
+                  <label class="custom-control-label" for="job-agree">I agree to the Privacy Policy and term of use of
+                    readbid.asia
+                  </label>
+                </div>
+                <br>
+                By clicking submit, I hereby declare that I'm the legal owner /
+                proprietor / joint-owner / joint-proprietor / beneficial owner /
+                trustee / company director (in case of incorporated ownership) of
+                the abovementioned property and I shall indemnify and keep
+                realbid.asia / MNP Auctioneers (Central) Sdn. Bhd. / best2bid.com indemnified
+                against any liability, loss, expense, damages, claims, suits, actions,
+                demands or proceedings, whether arising from the discrepancy of
+                the information provided herein.
+              </div>
+              <br>
+              <div class="d-none alert alert-danger w-100 my-md-3" role="alert" data-error-message>
+                Please fill all fields correctly.
+              </div>
+              <button class="btn btn-primary btn-loading rentPart" style="display: none;" type="submit"
+                id="submitRentPropertyInfo" data-loading-text="Submit form"
+                onclick="submitRentPropertyInfoClick()"><span>Submit & Continue</span></button>
+              <button class="btn btn-primary btn-loading salePart" style="display: none;" type="submit"
+                id="submitSalePropertyInfo" data-loading-text="Submit form"
+                onclick="submitSalePropertyInfoClick()"><span>Submit & Continue</span> </button>
+              {{!-- <div class="loader1"></div> --}}
+
+              <div id="recaptcha-container"></div>
+              <br>
+              <br>
+              <div class="form-group">
+                <span style="color: darkgrey; font-size: 13px;">Note: After <b>submission</b>, you will receive an email
+                  with a
+                  link to access
+                  the current process. You may utilize the said link to manage your
+                  registration process with readbid.asia.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="packages" role="tabpanel" aria-labelledby="packages-tab">
+      {{!-- <section class="bg-light" style="padding-top: 0;"> --}}
+      <div class="container" style="max-width: 1500px;">
+        <div class="row mb-4 mb-md-5 align-items-start">
+          <div class="col-lg-4 mb-4 mb-lg-0 pl-lg-5">
+            <div class="alert alert-primary" style="text-align: center;">
+              <div data-aos="fade-up" data-aos-delay="100"><b>realbid.asia</b> is the brainchild of a leading auction
+                house in
+                Malaysia<br>
+                <b>MNP Auctioneers</b><br>+</div><br>
+              <div data-aos="fade-up" data-aos-delay="200">The pioneering online bidding portal in Malaysia
+                <br><b>best2bid.com</b><br>=</div><br>
+              <div class="fancy-border">
+                <b>
+                  TIME POWER<br>+<br>
+                  ONLINE AUCTION<br>+<br>
+                  BREAKTHROUGH BARRIER<br>+<br>
+                  CONNECTING THE ENTIRE MARKET<br>+<br>
+                  HIGH VIEWING & TRAFFIC<br>+<br>
+                  CONNECTING THE NEW NORMAL<br>=<br>
+                  UNLIMITED POSSIBILITY</b>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 order-lg-2 pr-lg-5" style="border-left: 1px solid lightgrey;">
+            <div class="row justify-content-center">
+              <div class="col-sm-9 col-md-7 col-lg-6 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                <div class="card card-body align-items-center shadow">
+                  {{!-- <div class="badge badge-success badge-pill mb-4">Best Value</div> --}}
+                  <div class="text-center mb-4">
+                    <h4 style="background-color: yellow;padding: 5px;color: blue;">DIY BASIC REALBID</h4>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                      <span class="h5 mb-0 mr-2" style="color: darkblue;">RM</span>
+                      <span class="display-3 mb-0" style="font-size: 80px; color: darkblue">388</span>
+                    </div>
+                    <div style="color: blue;">One-Time Online Auction</div>
+                  </div>
+                  <ul class="list-unstyled p-0">
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Property owner’s choice of starting price
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Connecting pioneering online bidding platform – best2bid.com</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Strategic online promotion – min 10,000 online viewing</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">7-Day timed online auction event
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Professional property viewing arrangement
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Legal services – legal services, tenancy contract and after-sale service
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart" style="display: none;" style="text-align: center;">
+                      <div class="d-flex align-items-center">
+                        <h6 class="mb-0 ml-3"><strong>Seller’s premium – 50% of one-month rental</strong>
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="my-3 salePart" style="display: none;" style="text-align: center;">
+                      <div class="d-flex align-items-center">
+                        <h6 class="mb-0 ml-3"><strong>Seller’s premium – 1% of Hammer Price</strong>
+                        </h6>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href="javascript:void(0)" id="basicPackageSubmit" onclick="packageClick('basic',388)"
+                    class="btn btn-lg btn-block btn-outline-primary">Choose</a>
+                </div>
+              </div>
+              <div class="col-sm-9 col-md-7 col-lg-6 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="card card-body align-items-center shadow">
+
+                  <div class="text-center mb-4">
+                    <h4 style="background-color: yellow;padding: 5px;color: blue;">POWER REALBID</h4>
+                    <div class="d-flex align-items-center justify-content-center mb-1">
+                      <span class="h5 mb-0 mr-2" style="color: darkblue;">RM</span>
+                      <span class="display-3 mb-0" style="font-size: 80px; color: darkblue;">688</span>
+                    </div>
+                    <div style="color: blue;">One-Time Online Auction<br><span style="color: green;">Original Price
+                        RM1688</span></div>
+                  </div>
+                  <ul class="list-unstyled p-0">
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Consultation to strategize marketable starting price</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Connecting pioneering online bidding platform – best2bid.com</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Strategic online promotion – min 30,000 online viewing</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">14-Day timed online auction event</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Professional property viewing arrangement</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Legal services – legal services, tenancy contract and after-sale service
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Professional property photography</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Promoting marketability through targeted content creation</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">Attracts higher viewing, special recommendation, higher marketability and
+                          enhance bidder’s confidence</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart salePart" style="display: none;">
+                      <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-success-alt">
+                          <img src="/assets/img/icons/interface/icon-check.svg" alt=""
+                            class="m-2 icon icon-xs bg-success" data-inject-svg>
+                        </div>
+                        <h6 class="mb-0 ml-3">30-Day post-auction online exposure to attract interest (if auction
+                          unsuccessful)</h6>
+                      </div>
+                    </li>
+                    <li class="my-3 rentPart" style="display: none;" style="text-align: center;">
+                      <div class="d-flex align-items-center">
+                        <h6 class="mb-0 ml-3"><strong>Seller’s premium – 100% of one-month rental</strong>
+                        </h6>
+                      </div>
+                    </li>
+                    <li class="my-3 salePart" style="display: none;" style="text-align: center;">
+                      <div class="d-flex align-items-center">
+                        <h6 class="mb-0 ml-3"><strong>Seller’s premium – 2% of Hammer Price</strong>
+                        </h6>
+                      </div>
+                    </li>
+                  </ul>
+                  <a href="javascript:void(0)" id="powerPackageSubmit" onclick="packageClick('power',688)"
+                    class="btn btn-lg btn-block btn-outline-primary">Choose</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {{!-- </section> --}}
+    </div>
+    <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+      <div class="container">
+        <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+          <div class="col-auto">
+            <h3 class="mb-sm-0">Payment Methods</h3>
+          </div>
+          {{!-- <div class="col-auto">
+            <button class="btn btn-success btn-sm">Add Payment Method</button>
+          </div> --}}
+        </div>
+        <div class="container">
+          <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+            <div class="col-auto">
+              <h5 class="mb-sm-0">We can’t wait to serve you!</h5>
+            </div>
+          </div>
+          <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+            <div class="col-auto">
+              <h5 class="mb-sm-0">Please make payment for the package you have selected, through
+                the following method. We will then guide you to upload the
+                necessary property document.
+              </h5>
+            </div>
+          </div>
+          <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+            <div class="m-2" data-aos="fade-up" data-aos-delay="100" style="background-color: yellow;">
+              <div class="media rounded align-items-center pl-3 pr-4 pl-md-4 pr-md-5 py-2">
+                {{!-- <img src="/assets/img/icons/theme/devices/display-1.svg" alt="Monitor icon" class="icon mr-3 bg-primary"
+                  data-inject-svg> --}}
+                <h5 class="mb-0" id="txtPackageSelected">DIY BASIC REALBID! [RM388]</h5>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between align-items-center mb-4 mb-md-5">
+            <div class="col-auto">
+              <h5 class="mb-sm-0">PAYMENT GATEWAY</h5>
+            </div>
+          </div>
+        </div>
+        <div id="faq-accordion">
+          <div class="card mb-2 mb-md-3">
+            <a href="#accordion" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h6 class="mb-0 mr-2">STRIPE/PAYPAL</h6>
+                <img src="/assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm"
+                  data-inject-svg>
+              </div>
+            </a>
+            <div class="collapse" id="accordion" data-parent="#faq-accordion">
+              <div class="px-3 px-md-4 pb-3 pb-md-4">
+                <form class="container" id="stripePaymentForm">
+                  <div class="row">
+                    <div class="col-sm-6 col-lg-4 mb-3 mb-md-4">
+                      <div class="border rounded bg-white px-4 pb-4 pt-2">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <img src="/assets/img/logos/payment/mastercard.svg" alt="Mastercard">
+                          <div class="dropdown">
+                            <button class="btn btn-sm btn-primary rounded-circle dropdown-toggle" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="/assets/img/icons/interface/icon-more-horizontal.svg" alt="More"
+                                class="icon bg-white" data-inject-svg="data-inject-svg">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end">
+                          <div>
+                            <div class="h6 mb-2">•••• •••• •••• 3928</div>
+                            <div class="text-muted">Jonathan Wilson</div>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="masterCard" name="radio" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="masterCard"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-3 mb-md-4">
+                      <div class="border rounded bg-white px-4 pb-4 pt-2">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <img src="/assets/img/logos/payment/visa.svg" alt="Via">
+                          <div class="dropdown">
+                            <button class="btn btn-sm btn-primary rounded-circle dropdown-toggle" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="/assets/img/icons/interface/icon-more-horizontal.svg" alt="More"
+                                class="icon bg-white" data-inject-svg="data-inject-svg">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end">
+                          <div>
+                            <div class="h6 mb-2">•••• •••• •••• 9921</div>
+                            <div class="text-muted">Jonathan Wilson</div>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="visa" name="radio" class="custom-control-input">
+                            <label class="custom-control-label" for="visa"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 mb-3 mb-md-4">
+                      <div class="border rounded bg-white px-4 pb-4 pt-2">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <img src="/images/fpx_icon.jpg" alt="fpx">
+                          <div class="dropdown">
+                            <button class="btn btn-sm btn-primary rounded-circle dropdown-toggle" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="/assets/img/icons/interface/icon-more-horizontal.svg" alt="More"
+                                class="icon bg-white" data-inject-svg="data-inject-svg">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                              <a class="dropdown-item" href="#">Edit</a>
+                              <a class="dropdown-item" href="#">Remove</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end">
+                          <div>
+                            <div class="h6 mb-2">jwilson@jumpstart.com</div>
+                            <div class="text-muted">Jonathan Wilson</div>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="fpx" name="radio" class="custom-control-input">
+                            <label class="custom-control-label" for="fpx"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <a class="btn btn-primary" style="color: #fff;" id="submitStripePayment"
+                      onclick="continuePayment()"><span>Continue</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{!-- <div id="faq-accordion1">
+          <div class="card mb-2 mb-md-3">
+            <a href="#accordion-1" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <h6 class="mb-0 mr-2">BANKING / ELECTRONIC TRANSFER</h6>
+                <img src="/assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm"
+                  data-inject-svg>
+              </div>
+            </a>
+            <div class="collapse" id="accordion-1" data-parent="#faq-accordion1">
+              <div class="px-3 px-md-4 pb-3 pb-md-4">
+                <form class="container">
+                  <div class="form-group">
+                    Bank: Malayan Banking Berhad
+                    <br>
+                    Branch: KOMTAR
+                    <br>
+                    Account Holder: MNP Auctioneers (Central) Sdn Bhd
+                    <br>
+                    Account Number: 557054618949
+                    <br>
+                    SWIFT Code: MBBEMYKL
+                  </div>
+                  <br>
+                  <div class="form-group">
+                    <label>Payment Slip</label>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="paymentSlip-file">
+                      <label class="custom-file-label" for="paymentSlip-file">Choose file</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <a class="btn btn-primary" style="color: #fff;" id="submitPayment"><span>Continue</span></a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div> --}}
+      </div>
+    </div>
+    <div class="tab-pane fade" id="uploadDocument" role="tabpanel" aria-labelledby="uploadDocument-tab">
+      <div class="container">
+        <div class="row mb-4 mb-md-5 align-items-start">
+          <div class="col-lg-12 pr-lg-5">
+            <div class="row">
+              <div class="col">
+                <h3>realbid.asia – Property Document(s) Upload for online auction
+                  purpose</h3>
+              </div>
+            </div>
+            <p>Dear Valued Customer,</p>
+            <p>As a leading auctioning company with more than 15 years
+              journey in Malaysia and certified with ISO 9001:2015 in Quality
+              Management System, we are committed to serve you with the
+              most professional service attitude.
+            </p>
+            <p>Unlike others, property matter requires diligent handling of
+              relevant legal document. It may be a bit complicated but we will
+              guide you through to CASHOUT your property the smoother
+              way. We also hope that you will help us to reduce handling time
+              by providing accurate document.
+            </p>
+            <p>Sincere appreciation!</p>
+            <p>Kindly <span style="color: red;">upload</span> the photocopy of the following documents (PDF or
+              JPEG file):</p>
+          </div>
+          <div class="col-lg-8 pr-lg-5">
+            <form id="uploadDocumentsForm">
+              <div class="form-group">
+                <label>Sale and Purchase Agreement<span style="color: red;">*</span></label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="salesPurchaseAgreementFile" method="POST" action="/uploadSalesPurchaseAgreement">
+                  <label class="custom-file-label" for="spa-file">Choose file</label>
+                </div> --}}
+                <div class="dropzone" id="dropzoneSalePurchaseAgreement" required>
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Title/Grant/Strata Title</label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="titleFile">
+                  <label class="custom-file-label" for="strata-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzoneStrataTitle" method="POST" action="/uploadDocuments/StrataTitle">
+                </div>--}}
+                <div class="dropzone" id="dropzoneStrataTitle">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Owner’s Identity Card or passport<span style="color: red;">*</span><br>
+                  <small style="color: red;">Please cross “for realbid.asia only”</small></label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="ownerICFile">
+                  <label class="custom-file-label" for="ic-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzoneOwnerIC" method="POST" action="/uploadDocuments/OwnerIC"></div> --}}
+                <div class="dropzone" id="dropzoneOwnerIC">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>For Local Company Ownership: Form 9/13, 24 and 49</label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="companyOwenershipFile">
+                  <label class="custom-file-label" for="compForm-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzoneCompanyOwnership" method="POST"
+                  action="/uploadDocuments/CompanyOwnership"></div> --}}
+                <div class="dropzone" id="dropzoneCompanyOwnership">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Assessment Bill<span style="color: red;">*</span></label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="assessmentBillFile">
+                  <label class="custom-file-label" for="assessmentBill-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzoneAssessmentBill" method="POST"
+                  action="/uploadDocuments/AssessmentBill"></div> --}}
+                <div class="dropzone" id="dropzoneAssessmentBill">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Quit Rent Bill<span style="color: red;">*</span></label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="quitRentFile">
+                  <label class="custom-file-label" for="quitRent-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzoneQuitRentBill" method="POST" action="/uploadDocuments/QuitRentBill">
+                </div> --}}
+                <div class="dropzone" id="dropzoneQuitRentBill">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Latest Loan Repayment Statement (if encumbered)</label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="loanRepaymentFile">
+                  <label class="custom-file-label" for="repayment-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzoneQuitRentBill" method="POST" action="/uploadDocuments/QuitRentBill">
+                </div> --}}
+                <div class="dropzone" id="dropzoneLoanRepayment">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Property Image(s) (Max. 10 images) Compulsory for DIY
+                  BASIC REALBID！<span style="color: red;">*</span></label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="propertyImageFile">
+                  <label class="custom-file-label" for="propertyImage-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzonePropertyImage2" method="POST"
+                  action="/uploadDocuments/PropertyImage2"></div> --}}
+                <div class="dropzone" id="dropzonePropertyImage2">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Additional document 1</label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="addDoc1File">
+                  <label class="custom-file-label" for="addDoc1-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzoneAddDoc1" method="POST" action="/uploadDocuments/AddDoc1"></div> --}}
+                <div class="dropzone" id="dropzoneAddDoc1">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Additional document 2</label>
+                {{!-- <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="addDoc2File">
+                  <label class="custom-file-label" for="addDoc2-file">Choose file</label>
+                </div> --}}
+                {{!-- <div class="dropzone" id="dropzoneAddDoc2" method="POST" action="/uploadDocuments/AddDoc2"></div> --}}
+                <div class="dropzone" id="dropzoneAddDoc2">
+                  <div class="dz-message needsclick"><i class="fa fa-cloud-upload"></i>
+                    <h5 style="color: #555A64;">Drop files here or click to upload.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">Reconfirm property address:</label>
+                <input type="text" id="reconfirmAddress" name="address" class="form-control">
+                {{!-- <div class="invalid-feedback">
+                    Please type Registered/Postal Address.
+                  </div> --}}
+                {{!-- <small>This will be displayed on your public profile</small> --}}
+              </div>
+              <div class="form-group">
+                <label for="sellingPoint">Property selling point:<br>(limited to 500 words)</label>
+                <textarea id="sellingPoint" rows="6" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="remark">Remark(s)<br>(limited to 500 words)</label>
+                <textarea id="remark" rows="6" class="form-control"></textarea>
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <div class="custom-control custom-checkbox mb-3 mb-md-0">
+                  <input type="checkbox" class="custom-control-input" id="sentByMail">
+                  <label class="custom-control-label" for="sentByMail">Will be sent by mail</label>
+                </div>
+              </div>
+              <br>
+              <div class="d-flex flex-column justify-content-between">
+                <div class="custom-control custom-checkbox mb-3 mb-md-0">
+                  <input type="checkbox" class="custom-control-input" id="uploadDeclaration" checked>
+                  <label class="custom-control-label" for="uploadDeclaration"><span
+                      style="font-weight: 700;">DECLARATION</span><br>By clicking submit, I hereby declare
+                    that I'm
+                    the legal owner /
+                    proprietor / joint-owner / joint-proprietor / beneficial owner /
+                    trustee / company director (in case of incorporated ownership) of
+                    the abovementioned property and I shall indemnify and keep
+                    realbid.asia/MNP Auctioneers (Central) Sdn Bhd/best2bid.com indemnified
+                    against any liability, loss, expense, damages, claims, suits, actions,
+                    demands or proceedings, whether arising from any discrepancy of
+                    the information or document provided herein.</label>
+                </div>
+              </div>
+              <br>
+              <div>
+                <a class="btn btn-secondary" style="color: black;" id="saveDocument"><span>Save</span></a>
+                {{!-- <a class="btn btn-primary" style="color: #fff;" id="submitDocument"><span>Continue</span></a> --}}
+                <button class="btn btn-primary" style="color: #fff;" id="submitDocument"
+                  onclick="submitDocumentClick(event)"><span>Continue</span></button>
+              </div>
+              <br>
+              <a class="btn btn-warning" href="about-us" style="color: black;">About
+                realbid.asia</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="agreement" role="tabpanel" aria-labelledby="agreement-tab">
+      <div class="container">
+        {{!-- <div class="row mb-4 mb-lg-5">
+          <div class="col">
+            <div class="d-flex align-items-md-center">
+              <img src="/assets/img/avatars/male-3.jpg" alt="Avatar" class="avatar avatar-lg flex-shrink-0">
+              <div class="ml-4">
+                <button class="btn btn-sm btn-primary">Upload Avatar</button>
+                <div class="text-small mt-3">For best results, use an image at least 256px by 256px in either .jpg or
+                  .png format</div>
+              </div>
+            </div>
+            <hr class="mt-lg-5">
+          </div>
+        </div> --}}
+        <div class="row mb-4 mb-md-5 align-items-start">
+          <div class="col-lg-8 pr-lg-5">
+            <div class="row">
+              <div class="col">
+                <h3 class="rentPart" style="display: none;">realbid.asia – ONLINE PROPERTY RENTAL AUCTION</h3>
+                <h3 class="salePart" style="display: none;">realbid.asia – ONLINE PROPERTY SALE AUCTION</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h6 style="color: blue;">Property Address</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h6>To the POWER REALBID subscriber, upon completing the
+                  submission our specialist will be contacting within 24
+                  working hours to provide special consultation of
+                  realbid.asia.</h6>
+              </div>
+            </div>
+            <div class="row mb-lg-5">
+              <div class="col">
+                <h6 class="rentPart" style="display: none;">Please key in the essential part of the tenancy agreement as
+                  follow (Compulsory for <b>DIY BASIC REALBID！</b>)
+                </h6>
+                <h6 class="salePart" style="display: none;">Please key in the following essential auction info
+                  (compulsory
+                  for DIY BASIC REALBID subscriber):
+                </h6>
+              </div>
+            </div>
+            <form id="agreementForm">
+              {{!-- <div class="row form-row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" value="Andrew">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" value="Smith">
+                  </div>
+                </div>
+              </div> --}}
+              {{!-- <div class="form-group">
+                <label for="address">Registered/Postal Address*:</label>
+                <input type="text" id="address" class="form-control">
+              </div> --}}
+              <div class="rentPart" style="display: none;">
+                <div class="form-group">
+                  <label for="tenancyPeriod">Period of Tenancy</label>
+                  <select class="custom-select" id="tenancyPeriod">
+                    <option value="" disabled selected hidden>Select an option</option>
+                    <option value="1">12 months</option>
+                    <option value="2">24 months</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="commencementDate">Nearest available
+                    commencement Date<span style="color: red;">*</span>:</label>
+                  <input type="date" id="commencementDate" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <div class="row form-row">
+                    <div class="col-sm-6">
+                      <label for="tenancyPeriod">Option to Renew<span style="color: red;">*</span>
+                      </label><br>
+                      <div class="custom-control custom-switch mb-4">
+                        <input type="checkbox" class="custom-control-input" id="switch-1">
+                        {{!-- <input type="checkbox" class="custom-control-input" id="isRenew"> --}}
+                        <label class="custom-control-label" for="switch-1">Yes</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6" id="renewOption" style="display: none;">
+                      <select class="custom-select" id="tenancyPeriod">
+                        <option value="" disabled selected hidden>Select an option</option>
+                        <option value="1">12 months</option>
+                        <option value="2">24 months</option>
+                      </select>
+                      <small><span style="color: red;">*</span>Subject to the mutually
+                        agreeable rental</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="securityDeposit">Security Deposit (RM)
+                  </label>
+                  <select class="custom-select" id="securityDeposit">
+                    <option value="" disabled selected hidden>Select an option</option>
+                    <option value="1">1 months</option>
+                    <option value="2">2 months</option>
+                    <option value="3">Other</option>
+                  </select>
+                </div>
+                <div class="form-group" id="otherSecurityDeposit" style="display: none;" required>
+                  <label for="other_security_deposit">Other:</label>
+                  <input type="text" id="inputOtherSecurityDeposit" class="form-control"
+                    placeholder="Please fill up this field for other security deposit amount">
+                </div>
+                <div class="form-group">
+                  <label for="utilityDeposit">Utility Deposit (RM)
+                  </label>
+                  <select class="custom-select" id="utilityDeposit">
+                    <option value="" disabled selected hidden>Select an option</option>
+                    <option value="1">1 months</option>
+                    <option value="2">Other</option>
+                  </select>
+                </div>
+                <div class="form-group" id="otherUtilityDeposit" style="display: none;">
+                  <label for="other_utility_deposit">Other:</label>
+                  <input type="text" id="inputOtherUtilityDeposit" class="form-control"
+                    placeholder="Please fill up this field for other utility deposit amount">
+                </div>
+                <div class="form-group">
+                  <label for="otherDeposit1">Other Deposit</label>
+                  <div class="row form-row">
+                    <div class="col-sm-6">
+                      <input type="text" id="otherDeposit1" class="form-control" placeholder="Deposit Name">
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" id="otherDepositAmount1" class="form-control"
+                        placeholder="Deposit Amount (RM)">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="otherDeposit2">Other Deposit</label>
+                  <div class="row form-row">
+                    <div class="col-sm-6">
+                      <input type="text" id="otherDeposit2" class="form-control" placeholder="Deposit Name">
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" id="otherDepositAmount2" class="form-control"
+                        placeholder="Deposit Amount (RM)">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="bio">Other remark(s):<br>(not more than 500 words)</label>
+                  <textarea id="agreementRemark" rows="6" class="form-control"></textarea>
+                </div>
+              </div>
+
+              <div class="salePart" style="display: none;">
+                <div class="form-group">
+                  <label for="reservePrice">My auction reserve price:</label>
+                  <input type="text" id="reservePrice" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="minDeposit">Minimum auction deposit:</label>
+                  <input type="text" id="minDeposit" class="form-control">
+                  <small>5% or 10%. Bear
+                    in mind that lower deposit tends to attract higher bidding
+                    interest</small>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Please read , understand and agree with the following auction
+                  agreement’s <a href="javascript:void(null);" onclick="showTAndC()">terms and condition.</a> Please
+                  contact our hotline if
+                  you need any assistance
+                  {{!-- <a class="btn btn-warning" href="about-us" style="color: black;">About
+                    realbid.asia</a> --}}
+                </label>
+              </div>
+              <div class="form-group" id="tandcform" style="display: none;">
+                <ol>
+                  <li>This auction agreement binds all the information and
+                    document selected or submitted by the property owner
+                    within realbid.asia.</li>
+                  <li>Upon acknowledging receipt of full and complete property
+                    legal documents and online auction package fee,
+                    readbid.asia will conduct the online auction within 30 days.</li>
+                  <li class="rentPart" style="display: none;">Subject to Item 4, the property owner agrees that the
+                    package’s rental sale’s premium (for any successful online
+                    auction) shall be deductible from any deposit collected from
+                    the successful bidder. Balance deposit shall be remitted to
+                    the property owner’s designated bank account within seven
+                    (7) days upon full deposit collected. The property owner is
+                    committed to settle whatever outstanding due to
+                    realbid.asia immediately upon demand. No fee or rental
+                    sale’s premium be refunded at whatsoever circumstance.
+                  </li>
+                  <li class="salePart" style="display: none;">Subject to Item 4, the property owner agrees that the
+                    package’s seller premium (for any successful online auction)
+                    shall be deductible from any deposit collected from the
+                    successful bidder. Balance deposit shall be remitted to the
+                    property owner’s designated bank account within seven (7)
+                    days. Property owner committed to settle whatever amount due to realbid.asia. No fee or seller’s
+                    premium be refunded
+                    at whatsoever circumstance.
+                  </li>
+                  <li class="rentPart" style="display: none;">The property owner undertakes to acknowledge and execute
+                    the tenancy contract, tenancy agreement or equivalent and
+                    any relevant tenancy-related legal document(s) upon the
+                    successful bidder executed the same. The property owner
+                    shall execute the said contract or agreement no later than
+                    seven (7) days after the same is executed by the successful
+                    bidder or upon presented by realbid.asia (whichever later),
+                    failing which the auction sale shall be terminated without
+                    further reference. The said contract or agreement to be
+                    executed may be presented by way of electronic form or
+                    manual (printed) form, in whichever way that we deemed fit
+                    and proper.</li>
+                  <li class="salePart" style="display: none;">
+                    The property owner undertakes to acknowledge and execute
+                    the sale contract, sale and purchase agreement or
+                    equivalent and any relevant sale and transfer-related legal
+                    document(s) upon the successful bidder executed the same.
+                    The property owner shall execute the said agreement no
+                    later than seven (7) days after executed by the successful
+                    bidder, failing which the sale will be terminated. The
+                    agreement to be executed may be presented by way of
+                    electronic form or manual (printed) form, in whichever way
+                    that we deemed fit and proper.
+                  </li>
+                  <li class="rentPart" style="display: none;">The property owner acknowledges that realbid.asia has the
+                    discretion to determine the bidder registration deposit sum
+                    for the property for strategy planning purpose, nevertheless,
+                    the full deposit upon successful online auction shall be paid
+                    by the successful bidder not more than 7 days from online
+                    auction date.</li>
+                  <li class="salePart" style="display: none;">
+                    The property owner acknowledges that realbid.asia has the
+                    discretion to determine the bidder registration deposit for
+                    the property for strategy planning purpose, nevertheless,
+                    the full deposit upon successful online auction shall be paid
+                    by the successful bidder not more than 14 days from online
+                    auction date.
+                  </li>
+                  <li class="salePart" style="display: none;">
+                    Upon successful online auction sale, the balance purchase
+                    price is to be paid by successful bidder within three (3)
+                    months with extension of one (1) month with interest of six
+                    percent (6%) per annum on daily basis from the date of the
+                    fully executed sale and purchase agreement, sale contract,
+                    developer’s consent or State’s consent, whichever later.
+                  </li>
+                  <li class="salePart" style="display: none;">
+                    Upon successful sale and upon the sale contract or sale and
+                    purchase agreement fully executed, the property owner
+                    should engage appropriate legal professional to process the
+                    sale.
+                  </li>
+                  <li class="rentPart" style="display: none;">The property owner shall ensure that the property is
+                    readily
+                    available to deliver possession to the successful bidder for
+                    tenancy purpose.</li>
+                  <li>This agreement (and any part of realbid.asia) is a legal
+                    document between the property owner and realbid.asia,
+                    thus the property owner shall strictly prohibited from redistribution and third party duplication
+                    and shall keep it
+                    strictly private and confidential.</li>
+                  <li>The property owner shall indemnify and keep
+                    realbid.asia/MNP Auctioneers (Central) Sdn.
+                    Bhd/best2bid indemnified against any liability, loss, expense,
+                    damages, claims, suits, actions, demands or proceedings,
+                    whether arising from the discrepancy of the information
+                    provided and non-compliance of the auction agreement
+                    herein.</li>
+                  <li>In case of any discrepancy, the English version of the auction
+                    agreement shall prevail.</li>
+                </ol>
+              </div>
+              {{!-- <div class="form-group">
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <br />
+                <input type="submit" value="Submit">
+              </div> --}}
+              <div class="d-flex flex-column justify-content-between">
+                <div class="custom-control custom-checkbox mb-3 mb-md-0">
+                  <input type="checkbox" class="custom-control-input" id="job-agree2" required>
+                  <label class="custom-control-label" for="job-agree2">I agree with the above auction agreement’s terms
+                    and condition
+                  </label>
+                </div>
+              </div>
+              <br>
+              {{!-- <a class="btn btn-primary" style="color: #fff;" id="submitAgreement"><span>Submit</span></a> --}}
+              <button class="btn btn-primary rentPart" type="button" style="color: #fff; display: none;"
+                id="submitRentAgreement" onclick="submitRentAgreementClick()"><span>Submit rent</span></button>
+              <button class="btn btn-primary salePart" type="button" style="color: #fff; display: none;"
+                id="submitSaleAgreement" onclick="submitSaleAgreementClick()"><span>Submit sale</span></button>
+              <br>
+              <br>
+              <a class="btn btn-warning" href="about-us" style="color: black;">About
+                realbid.asia</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{!-- {{> footer}} --}}
+  <a href="#top" class="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll data-aos="fade-up"
+    data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+    <img src="/assets/img/icons/interface/icon-arrow-up.svg" alt="Icon" class="icon bg-white" data-inject-svg>
+  </a>
+  <div class="modal fade" id="congratulationPropertyInfo" tabindex="-1" role="dialog" aria-hidden="true"
+    style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="w-100 pt-4">
+            <div class="d-inline-block">
+              {{!-- <img src="/images/success.jpg" alt="Confirmation Icon" style="width: 100%;"> --}}
+
+            </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="/assets/img/icons/interface/icon-x.svg" alt="Icon">
+            </span>
+          </button>
+        </div>
+        <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5" style="color: black; font-weight: 700;">
+          <div class="form-group">
+            {{!-- <label id="lblVerify">Click
+                  <a id="sendSMSCode" onclick="sendSMSCodeClick()"
+                    style="color: #009b72; text-decoration:underline; cursor: pointer;">HERE</a>
+                  to receive a code from your mobile number</label><br>
+                <div id="recaptcha-container"></div> --}}
+
+            <label><small>A text message with a 6-digit verification code was just sent to your phone
+                number</small><br><span id="lblCode">Key in the code: (<span id="counter">120</span>s
+                countdown)</span><br><input type="text" id="inputSMSCode" class="form-control" required></label>
+            <small style="color: red;" id="lblcodeError" style="display: none;">Please enter the code!</small>
+            {{!-- <button class="btn btn-primary" type="button" id="verifySMSCode"
+                  onclick="verifySMSCodeClick()">VERIFY</button> --}}
+          </div>
+          <p>CONGRATULATIONS! You are almost there to CASHOUT your
+            property!</p>
+          <button class="btn btn-primary btn-block btn-loading" id="congratulationPropertyInfoSubmit"
+            onclick="submitRentPropertyInfoClick2()"><span>Continue</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="pleaseCheck" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="w-100 pt-4">
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="/assets/img/icons/interface/icon-x.svg" alt="Icon">
+            </span>
+          </button>
+        </div>
+        <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5" style="color: black; font-weight: 700;">
+          <p>You must accept terms and conditions to continue</p>
+          <button class="btn btn-primary btn-block btn-loading" id="closeCheckModal"><span>OK</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="requiredFieldModal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="w-100 pt-4">
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="/assets/img/icons/interface/icon-x.svg" alt="Icon">
+            </span>
+          </button>
+        </div>
+        <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5" style="color: black; font-weight: 700;">
+          <p>Please fill in required fields</p>
+          <button class="btn btn-primary btn-block btn-loading" id="closeRequiredFieldModal"><span>OK</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="congratulation" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="w-100 pt-4">
+            <div class="d-inline-block">
+              <img src="/images/success.jpg" alt="Confirmation Icon">
+            </div>
+          </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <img src="/assets/img/icons/interface/icon-x.svg" alt="Icon">
+            </span>
+          </button>
+        </div>
+        <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5" style="color: black; font-weight: 700;">
+          <p>CONGRATULATIONS! You have completed the full submission!</p>
+          <p>Your submission number is <span style="color: red;" id="txtsubmission">XXXXXX (submission reference
+              number)</span></p>
+          <p>Our customer service officer will be contacting you within 24 working hours.</p>
+          <p>Thank you!</p>
+          <button class="btn btn-primary btn-block btn-loading" id="okCongratulate"><span>Okay</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="myModal" class="modal-img">
+    <span class="close-img">&times;</span>
+    <img class="modal-img-content" id="img01">
+    <div id="caption-img"></div>
+  </div>
+
+  <!-- Required vendor scripts (Do not remove) -->
+  
+  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
+<script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+  <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+  <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+  <script type="text/javascript" src="/assets/js/aos.js"></script>
+  <!-- Clipboard (copies content from browser into OS clipboard) -->
+  <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
+  <!-- Fancybox (handles image and video lightbox and galleries) -->
+  <script type="text/javascript" src="/assets/js/jquery.fancybox.min.js"></script>
+  <!-- Flatpickr (calendar/date/time picker UI) -->
+  <script type="text/javascript" src="/assets/js/flatpickr.min.js"></script>
+  <!-- Flickity (handles touch enabled carousels and sliders) -->
+  <script type="text/javascript" src="/assets/js/flickity.pkgd.min.js"></script>
+  <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+  <script type="text/javascript" src="/assets/js/ion.rangeSlider.min.js"></script>
+  <!-- Isotope (masonry layouts and filtering) -->
+  <script type="text/javascript" src="/assets/js/isotope.pkgd.min.js"></script>
+  <!-- jarallax (parallax effect and video backgrounds) -->
+  <script type="text/javascript" src="/assets/js/jarallax.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jarallax-video.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jarallax-element.min.js"></script>
+  <!-- jQuery Countdown (displays countdown text to a specified date) -->
+  <script type="text/javascript" src="/assets/js/jquery.countdown.min.js"></script>
+  <!-- jQuery smartWizard facilitates steppable wizard content -->
+  <script type="text/javascript" src="/assets/js/jquery.smartWizard.min.js"></script>
+  <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+  <script type="text/javascript" src="/assets/js/plyr.polyfilled.min.js"></script>
+  <!-- Prism (displays formatted code boxes) -->
+  <script type="text/javascript" src="/assets/js/prism.js"></script>
+  <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+  <script type="text/javascript" src="/assets/js/scrollMonitor.js"></script>
+  <!-- Smooth scroll (animation to links in-page)-->
+  <script type="text/javascript" src="/assets/js/smooth-scroll.polyfills.min.js"></script>
+  <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+  <script type="text/javascript" src="/assets/js/svg-injector.umd.production.js"></script>
+  <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+  <script type="text/javascript" src="/assets/js/twitterFetcher_min.js"></script>
+  <!-- Typed text (animated typing effect)-->
+  <script type="text/javascript" src="/assets/js/typed.min.js"></script>
+  <!-- Required theme scripts (Do not remove) -->
+  <script type="text/javascript" src="/assets/js/theme.js"></script>
+  {{!-- Google recaptcha --}}
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- Removes page load animation when window is finished loading -->
+  <script type="text/javascript">
+    window.addEventListener("load", function () {
+      document.querySelector('body').classList.add('loaded');
+    });
+  </script>
+  <!--Firebase-->
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+  <!-- File Upload Dropzone-->
+  {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js"></script> --}}
+  <script src="/assets/js/dropzone.js"></script>
+  <script src="https://checkout.stripe.com/checkout.js" defer></script>
+  <script>
+    var stripePublicKey = '{{_stripePublicKey}}'
+    {{!-- console.log(stripePublicKey) --}}
+  </script>
+  <script>
+    var url = $(location).attr('href');
+    var arr = url.split('/');
+    var _requestID ="{{_requestID}}"
+    var _userID = "{{_userID}}"
+    var userid = "{{_userID}}"
+    var requestid = "{{_requestID}}"
+  </script>
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <script src="/assets/js/u_dropzone_script.js" defer></script>
+  {{!-- Javascript function --}}
+  <!--U: Firestore Users Info-->
+  <script type="text/javascript" src="/assets/js/u_firestore_user_info.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+timeout: 1800s
+steps:
+
+  # to find new version of node.... check this link https://console.cloud.google.com/gcr/images/cloud-builders/GLOBAL/npm?gcrImageListsize=30
+
+  # Install node packages
+  - name: 'gcr.io/cloud-builders/npm:node-10.10.0'
+    args: [ 'install' ]
+
+  # tag complete time line
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args: [ '-c', 'echo "This version process start at $(($(date +%s%N)/1000000)) - " >> public/assets/version.txt']
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args: [ '-c', 'curl -X POST -H ''Content-type: application/json'' --data ''{"text":"$_AS $SHORT_SHA building start from check-in. View build status https://console.cloud.google.com/cloud-build/builds/$BUILD_ID?project=$PROJECT_ID"}'' https://hooks.slack.com/services/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']
+
+    # # Build productive files
+  # - name: 'gcr.io/cloud-builders/npm'
+  #   args: [ 'run', 'build', '--prod' ]
+
+  # Deploy to google cloud app egnine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy', '.','--project=$_AS' , '--version=cb-$SHORT_SHA']
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args: [ '-c', 'curl -X POST -H ''Content-type: application/json'' --data ''{"text":"$_AS with version [cb-$SHORT_SHA] deployed from check-in"}'' https://hooks.slack.com/services/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']
+
+
+# options:
+#   machineType: 'N1_HIGHCPU_8'

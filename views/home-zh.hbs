@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap HTML template and UI kit by Medium Rare">
+    <!-- Begin loading animation -->
+    <link href="assets/css/loaders/loader-pulse.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- End loading animation -->
+    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body style="padding: 0;">
+    <div class="loader">
+        <div class="loading-animation"></div>
+    </div>
+    <!-- <div class="alert alert-dismissible d-none d-md-block bg-primary-3 text-white py-4 py-md-3 px-0 mb-0 rounded-0 border-0">
+    <div class="containers">
+        <div class="row no-gutters align-items-md-center justify-content-center">
+            <div class="col-lg-11 col-md d-flex flex-column flex-md-row align-items-md-center justify-content-lg-center">
+                <div class="mb-3 mb-md-0"><strong>Intro Sale</strong> $10 per license for Jumpstart's launch. Act fast, ends soon.</div>
+                <a class="btn btn-sm btn-success ml-md-3" target="_blank" href=#>Redeem Offer</a>
+            </div>
+            <div class="col-auto position-absolute right">
+                <button type="button" class="close p-0 position-relative" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                        <img src="assets/img/icons/interface/icon-x.svg" alt="Close" class="icon icon-sm bg-white" data-inject-svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+    {{> newHeader}}
+
+    <div data-overlay class="bg-primary-3 jarallax text-white" data-jarallax data-speed="0.2">
+        <img src="images/promo_cover.jpg" alt="Background" class="jarallax-img opacity-30">
+        <section class="pb-0">
+            <div class="container pb-5">
+                <div class="row justify-content-center text-center">
+                    <div class="col-xl-8 col-lg-10 col-md-11">
+                        {{!-- <a data-fancybox href="https://vimeo.com/166034462#t=32s"
+                            class="btn btn-lg btn-light rounded-circle mb-4 mb-md-5" data-aos="zoom-in"
+                            data-aos-delay="400">
+                            <img src="assets/img/icons/interface/icon-media-play.svg" alt="Media Play Icon"
+                                class="icon icon-lg bg-dark pl-1" data-inject-svg>
+                        </a> --}}
+                        {{!-- <h1 class="display-3" data-aos="fade-up" data-aos-delay="100">ALERT! You’re Not Benefited from
+                            The Housing Policy!</h1> --}}
+                        {{!-- <p class="lead" data-aos="fade-up" data-aos-delay="100">警号！您并不受益于产业政策中！</p> --}}
+                        <img src="images/warning-logo.png" style="width: 120px;">
+                        {{!-- <p class="lead" data-aos="fade-up" data-aos-delay="100">您并不受益于产业政策中！</p> --}}
+                        <p class="lead" data-aos="fade-up" data-aos-delay="100">這是真實的! 如果你是二手產業業主，新常態將會摧毀你的產業值!</p>
+                        <p class="lead" data-aos="fade-up" data-aos-delay="200">二手业主如何突破新常态？</p>
+                        {{!-- <p class="lead" data-aos="fade-up" data-aos-delay="300"
+                            style="color: chartreuse; font-weight: 700;">
+                            CASHOUT Your Property the REAL BID Way!
+                            Be it Rent or Sale!
+                        </p> --}}
+                        <h2 class="display-3" data-aos="fade-up" data-aos-delay="300" style="color: chartreuse; font-size:38px">想租或卖出去的<br>请看过来！<br>速效兑现您的产业！</h2>
+                        <p class="lead" data-aos="fade-up" data-aos-delay="400">
+                            <span style="font-weight: 700;">realbid.asia  亚洲产拍 </span>让线上拍卖兑现您的产业
+                        </p>
+                        <p class="lead" data-aos="fade-up" data-aos-delay="500" style="margin-bottom: 60px;">
+                            一切程序都在网上专业处理！<br>请抓紧机会主动出击
+                        </p>
+                        <p ><a class="btn btn-secondary"
+                                style="color: black; cursor: pointer; font-size: 1.2rem;" id="learnMore"><span>更多详情</span></a>
+                        </p>
+                        {{!-- <div class="d-flex flex-column flex-sm-row justify-content-center mt-4 mt-md-5"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <a href="#" class="btn btn-primary btn-lg mx-sm-2 my-1 my-sm-0">View Demos</a>
+                            <a href="#" class="btn btn-outline-light btn-lg mx-sm-2 my-1 my-sm-0">Purchase</a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+            <div class="divider divider-bottom bg-white" style="background-color: transparent !important;"></div>
+        </section>
+    </div>
+    <section class="p-0 bg-primary text-white row no-gutters">
+        <div class="col-lg-5 col-xl-6">
+            {{!-- <img src="images/property_auction.jpg" alt="Image" class="w-100 h-100"> --}}
+            <div class="divider divider-side bg-primary d-none d-lg-block" style="max-width: inherit;"></div>
+        </div>
+        <div class="col-lg-7 col-xl-6">
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col col-md-10 col-xl-9">
+                            {{!-- <h3 class="h1" id="friendlyTip">温馨提示*</h3> --}}
+                            <h3 class="h1" id="friendlyTip">温馨提示</h3>
+                            <p class="lead">
+                                拍卖产业和买卖产业同样是产业销售方式，产业拍卖并不局限于银行抵押拍卖。
+                                外国家都盛行以拍卖为首要的私人产业销售方式。
+                            </p>
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
+                                        <li class="my-3 mx-3 mx-lg-4" style="text-align: center;">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="images/mnp_logo.png" alt="mnp company logo">
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="images/best2bid_logo_black.png" alt="best2bid logo">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="my-3 mx-3 mx-lg-4" style="text-align: center;">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    领先线上拍卖平台强力驱动
+                                                </div>
+                                                <div class="col-6">
+                                                    诚意推介
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                {{!-- <button class="btn btn-warning" style="color: black;">欢迎产业中介成为我们的伙伴。</button> --}}
+                                <button class="btn btn-warning" style="color: black;">歡迎產業仲介成為我們的夥伴。現在就聯絡 +6016-419 3313 以發展您的無限前途!</button>
+                            </div>
+                            <br>
+                            <div class="row justify-content-center">
+                                <button class="btn btn-secondary about-us-zh" style="color: black;">关于 realbid.asia 亚洲产拍</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row section-title justify-content-center text-center">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    {{!-- <h3 class="display-4">2019冠状病毒病</h3> --}}
+                    <div class="lead">我们关注到在冠病新常态下业主的困境:
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-3 mb-lg-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/access_supply.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6" style="text-align: center;">
+                            {{!-- <h4>产业销滞供过于求</h4> --}}
+                            <p>产业销滞供过于求 - 市场越来越不缺选择</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3 mb-lg-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/new_housing.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6" style="text-align: center;">
+                            {{!-- <h4>政府政策趋向新发展屋业项目</h4> --}}
+                            <p>政府政策趋向新发展屋业项目 – 所造成的另类残酷竞争</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3 mb-lg-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/property_insight.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6" style="text-align: center;">
+                            {{!-- <h4>产业资讯信息无障碍和透明</h4> --}}
+                            <p>产业资讯信息无障碍和透明 - 买家租户自己分析自己做主</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3 mb-lg-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/mobile_device.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6" style="text-align: center;">
+                            {{!-- <h4>传统方式比不上一机在手</h4> --}}
+                            <p>传统方式比不上一机在手 - 线上几乎决定一切</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3 mb-lg-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/virtual_office.jpg" alt="Image" class="img-fluid rounded">
+                        </div>
+                        <div class="col-6" style="text-align: center;">
+                            {{!-- <h4>网上活动盛行，投资开销慎行</h4> --}}
+                            <p>网上活动盛行，投资开销精简慎行 - 产业需求减少</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <p><a class="btn btn-secondary" style="color: black; cursor: pointer; font-size: 1.2rem;"
+                        id="whatNext"><span>下一页</span></a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary-3">
+        <div class="container">
+
+            <div class="row section-title justify-content-center text-center">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <h4 class="display-4" style="font-size: 2rem; color: white;" id="situation">此时此刻，业者都面对类似以下的情况：</h4>
+                    {{!-- <div class="lead">At this time, many property owners are facing the following
+                        situations:</div> --}}
+                </div>
+            </div>
+            {{!-- <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="images/rent_out1.jpg"
+                                alt="Image accompanying Circle testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>Cannot rent out, cannot sell</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-9.jpg"
+                                alt="Image accompanying Kanba testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>Price can be lowered, but can it sell? Can it rent?</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-5.jpg"
+                                alt="Image accompanying Treva testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>The longer the unit is vacant, the riskier the maintenance
+                                problem</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-5.jpg"
+                                alt="Image accompanying Treva testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>No ROI but maintenance cost remain
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-5.jpg"
+                                alt="Image accompanying Treva testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>Similar property is plenty, only the best stay
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-3 mb-md-4 mb-lg-0" style="padding-bottom: 5px;">
+                    <div class="card h-100 hover-box-shadow">
+                        <div class="d-block bg-gradient rounded-top position-relative">
+                            <img class="card-img-top hover-fade-out" src="assets/img/case-studies/thumb-5.jpg"
+                                alt="Image accompanying Treva testimonial">
+                        </div>
+                        <div class="card-body" style="padding: 1rem;">
+                            <h5>Keep dragging time hopping to gain higher, but end up with
+                                higher holding cost and opportunity cost
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+            <div class="row align-items-center justify-content-center" style="padding-bottom: 25px;">
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+
+                        <div class="text-center">
+                            {{!-- <img src="images/rent_out.jpg" alt="Image" class="img-fluid rounded"> --}}
+                            {{!-- <img class="img-fluid rounded" src="images/rent_out1.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    {{!-- <div class="rounded-circle bg-success-alt">
+                      <img src="assets/img/icons/interface/icon-check.svg" alt=" icon=" class="m-2 icon icon-xs bg-success" data-inject-svg>
+                    </div> --}}
+                                    <h5 class="mb-0 ml-3">租不出去，也卖不出去</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/lower_price.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">卖价或出租价被压低，也不一定能够出售或出租</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/maintenance_prob.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">房产业放空很久了，也带出保养和维护的问题</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="400"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/maintenance_cost.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">没有投资回酬，还要负担每月固定开销</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="500"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/similar_property.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">同类型的产业市场太多了，得不到应有的注意力</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-7 col-lg-4 mb-3 mb-md-4 mb-lg-0" data-aos="fade-up" data-aos-delay="600"
+                    style="padding-bottom: 5px;">
+                    <div class="card card-body align-items-center shadow" style="padding: 1rem;">
+                        <div class="text-center">
+                            {{!-- <img class="img-fluid rounded" src="images/holding_cost.jpg" alt="Image"> --}}
+                        </div>
+                        <ul class="list-unstyled p-0" style="margin: 0;">
+                            <li>
+                                <div class="d-flex align-items-center" style="padding-top: 10px;">
+                                    <h5 class="mb-0 ml-3">想卖或租出高价，但也因此浪费太多的时间与金钱, 最终得不偿失</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center" style="margin-bottom: 0;"
+                data-aos="fade-up" data-aos-delay="0">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <h5 style="font-size: 1.5rem; color: white;">当您面对以上的情况与困境时，<br>realbid.asia 亚洲产拍 绝对是您绝佳的替代方案！
+                    </h5>
+                    {{!-- <div class="lead">At this time, many property owners are facing the following
+                        situations:</div> --}}
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center" data-aos="fade-up" data-aos-delay="0"
+                style="margin-bottom: 5px;">
+                <button class="btn btn-warning" style="color: black;" id="keyHere">方案在此！</button>
+            </div>
+            <div class="row section-title justify-content-center text-center" data-aos="fade-up" data-aos-delay="0">
+                <button class="btn btn-secondary about-us-zh" style="color: black;">关于 realbid.asia 亚洲产拍</button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary">
+        <div class="container">
+            <div class="text-white">
+                <div class="row section-title justify-content-center text-center">
+                    <div class="col-md-9 col-lg-8 col-xl-7">
+                        <h3 class="display-4" id="whyUs">为何采用<span style="color: #d5ebe1;">亚洲产拍</span>？<br>这种方案符合您吗？</h3>
+                        <div class="lead">我们诚意推荐您最符合新常态的产业销售方案 - realbid.asia 亚洲产拍！</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-isotope-collection>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px; background: #ff6b6b; border: #ff6b6b;">
+                        <p><strong style="color: #2C3038;">最重要的是，您绝对负担得起参与<br><span style="color: #739c89;">亚洲产拍</span>!</strong></p>
+                        {{!-- <p>
+                            Don’t forget the opportunity cost that you are
+                            overlooking for keep holding the property
+                        </p> --}}
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p><strong style="color: #2C3038;">真实市场</strong></p>
+                        <p>
+                            <span style="color: #739c89;">亚洲产拍</span>的标价皆为起价，并非卖价。市场将决定您的产业需求, 
+                            起价的高低也会左右竞标人数的参与和竞标价的多与少。
+                            <span style="color: #739c89;">亚洲产拍</span>提供您所需要的真实市场。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p><strong style="color: #2C3038;">过滤有资格竞标者</strong></p>
+                        <p>
+                            <span style="color: #739c89;">亚洲产拍</span>过滤有资格的买家或承租人以进入竞标范围，在限期内竞标目标产业。
+                            得标者签约一纸协议，然后履行和完成协议。节省时间 - <span style="color: #739c89;">亚洲产拍</span>，一行到底
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">真实拍卖时间表</strong>
+                        </p>
+                        <p>
+                            与其茫茫然不确定性的等待与焦虑，<span style="color: #739c89;">亚洲产拍</span>给予您真实的拍卖时间表和拍卖后的活动步骤
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">新常态的线上趋势</strong>
+                        </p>
+                        <p>
+                            完全符合和运用，<span style="color: #739c89;">亚洲产拍</span>注重线上推广。在传统媒体上，<span style="color: #739c89;">亚洲产拍</span>也会定时推广以增加覆盖范围
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">公开透明与接应地气</strong>
+                        </p>
+                        <p>切勿光等不切实际的希望！<span style="color: #739c89;">亚洲产拍</span>接通整个市场，而非受个别评论或人为因素所左右</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            <strong style="color: #2C3038;">减少产业持有成本</strong>
+                        </p>
+                        <p>可别忘了您因持续持而有可能忽视的机会成本</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-3 mb-md-4" data-isotope-item>
+                    <div class="card card-body" style="padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 0px;">
+                        <p>
+                            {{!-- &ldquo;It's
+                            <mark data-aos='highlight-text' data-aos-delay='200'>the best theme I've ever
+                                purchased.</mark>Excellent and easy code, excellent design.&rdquo; --}}
+                            <strong style="color: #2C3038;">时间就是金钱</strong>
+                        </p>
+                        <p>创造分秒必争的时间观念来达至物有所值的竞标效率</p>
+                        {{!-- <div class="d-flex">
+                            <img src="assets/img/avatars/envato.svg" alt="Themeforest">
+                            <div class="ml-3">
+                                <h6 class="mb-0">felipelobo328</h6>
+                                <div>Themeforest Customer</div>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center text-white" style="margin-bottom: 10px;">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <div class="lead"><span style="color: #d5ebe1;">亚洲产拍</span>让您掌握产业命运在自己手中!</div>
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center text-white" style="margin-bottom: 10px;">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <div class="lead">您准备好兑现您的产业了吗！
+                        <a id="toUserForm2" class="btn btn-warning" style="color: black;">是的，请继续</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-title justify-content-center text-center">
+                <div class="col-md-9 col-lg-8 col-xl-7">
+                    <button class="btn btn-secondary about-us-zh" style="color: black;">关于 realbid.asia 亚洲产拍</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{!-- {{> footer}} --}}
+    <a href="#top" class="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll data-aos="fade-up"
+        data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
+        <img src="assets/img/icons/interface/icon-arrow-up.svg" alt="Icon" class="icon bg-white" data-inject-svg>
+    </a>
+    <div class="modal fade" id="user_form" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    {{!-- <div class="w-100 pt-4">
+                        <div class="d-inline-block mb-4 p-3 p-md-4 rounded-circle bg-primary-alt">
+                            <img src="" alt="Confirmation Icon" class="icon bg-primary"
+                                data-inject-svg="data-inject-svg">
+                        </div>
+                    </div> --}}
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="assets/img/icons/interface/icon-x.svg" alt="Icon">
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body px-md-4 px-lg-5 pb-4 pb-lg-5">
+                    {{!-- <form data-form-email novalidate> --}}
+                    <div class="form-group">
+                        <label>Realbid.asia 亚洲产拍高度重视您的私隐和确保您的个人产业资料不被滥用。</label>
+                    </div>
+                    <div class="form-group">
+                        <label>请填上您的个人资料如下：</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-name">业主姓名（根据身份证）：</label>
+                        <input id="demo-name" name="contact-name" type="text" class="form-control"
+                            placeholder="请填上" required>
+                        <div class="invalid-feedback">
+                            请填上业主姓名。
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-mobile">手提电话号码：</label>
+                        <input id="demo-mobile" name="contact-mobile" type="number" class="form-control"
+                            placeholder="011xxxxxxx" required>
+                        <div class="invalid-feedback">
+                            请填上手提电话号码。
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="demo-email">电邮：</label>
+                        <input id="demo-email" name="contact-email" type="email" class="form-control"
+                            placeholder="you@yoursite.com" required>
+                        <div class="invalid-feedback">
+                            请填上电邮。
+                        </div>
+                    </div>
+                    {{!-- <div class="form-group">
+                                    <label>Please choose one of the followings:</label>
+                                </div> --}}
+                    <div class="d-none alert alert-success w-100 my-md-3" role="alert" data-success-message>
+                        谢谢，我们团队的成员将很快与您联系。
+                    </div>
+                    <div class="d-none alert alert-danger w-100 my-md-3" role="alert" data-error-message
+                        id="userFormErrorMsg">
+                        请准确填上所有个人资料。
+                    </div>
+                    <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible"
+                        data-badge="bottomleft"></div>
+                    {{!-- <button class="btn btn-primary btn-block btn-loading" type="submit"
+                            data-loading-text="Submit form">
+                            <svg class="icon bg-white" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>Icon For Loading</title>
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g>
+                                        <polygon points="0 0 24 0 24 24 0 24" opacity="0"></polygon>
+                                    </g>
+                                    <path
+                                        d="M12,4 L12,6 C8.6862915,6 6,8.6862915 6,12 C6,15.3137085 8.6862915,18 12,18 C15.3137085,18 18,15.3137085 18,12 C18,10.9603196 17.7360885,9.96126435 17.2402578,9.07513926 L18.9856052,8.09853149 C19.6473536,9.28117708 20,10.6161442 20,12 C20,16.418278 16.418278,20 12,20 C7.581722,20 4,16.418278 4,12 C4,7.581722 7.581722,4 12,4 Z"
+                                        fill="#000000" fill-rule="nonzero"
+                                        transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) ">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span>Submit</span>
+                        </button> --}}
+                    <button class="btn btn-primary btn-block btn-loading" type="submit" data-loading-text="Submit form"
+                        id="propertyForRentButton"><span>出租产业</span></button>
+                    <button class="btn btn-primary btn-block btn-loading" type="submit" data-loading-text="Submit form"
+                        id="propertyForSaleButton"><span>售卖产业</span></button>
+                    {{!-- </form> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+    <!-- Fancybox (handles image and video lightbox and galleries) -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
+    <!-- Flickity (handles touch enabled carousels and sliders) -->
+    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+        window.addEventListener("load", function () { document.querySelector('body').classList.add('loaded'); });
+    </script>
+    {{!-- Javascript function --}}
+    <script type="text/javascript">
+        $("#toUserForm").click(function () {
+            $("#user_form").modal("show");
+        });
+        $("#toUserForm2").click(function () {
+            $("#user_form").modal("show");
+        });
+        $("#propertyForRentButton").click(function () {
+            window.location.href = "propertyForRent-zh";
+        });
+        $("#propertyForSaleButton").click(function () {
+            window.location.href = "propertyForSale-zh"
+        });
+        $(".about-us-zh").click(function () {
+            window.location.href = "about-us-zh"
+        });
+        $("#learnMore").click(function () {
+            var scrollTo;
+            var container = $('html,body');
+            scrollTo = $('#friendlyTip');
+            container.animate({ scrollTop: scrollTo.offset().top - 100 });
+        });
+        $("#whatNext").click(function () {
+            var scrollTo;
+            var container = $('html,body');
+            scrollTo = $('#situation');
+            container.animate({ scrollTop: scrollTo.offset().top - 100 });
+        });
+        $("#keyHere").click(function () {
+            var scrollTo;
+            var container = $('html,body');
+            scrollTo = $('#whyUs');
+            container.animate({ scrollTop: scrollTo.offset().top - 100 });
+        });
+    </script>
+    {{!-- setTimeout(() => {
+                console.log($("#userFormErrorMsg").is(":visible"));
+                if ($("#userFormErrorMsg").is(":visible") != true) {
+                    window.location.href = "propertyForRent";
+                }
+            }, 500); --}}
+</body>
+
+</html>
