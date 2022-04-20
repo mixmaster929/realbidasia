@@ -1482,11 +1482,12 @@
     var userid = "{{_userID}}"
     var requestid = "{{_requestID}}"
   </script>
+<script src="https://js.stripe.com/v3/"></script>
 
-  <script src="/assets/js/u_dropzone_script.js"></script>
+  <script src="/assets/js/u_dropzone_script.js" defer></script>
   {{!-- Javascript function --}}
   <!--U: Firestore Users Info-->
-  <script type="text/javascript" src="/assets/js/u_firestore_user_info.js"></script>
+  <script type="text/javascript" src="/assets/js/u_firestore_user_info.js" defer></script>
 </body>
 
 </html>

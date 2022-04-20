@@ -26,20 +26,20 @@ const {
 
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
-  apiKey: 'AIzaSyBXPOi229tqnZ-OqE2bap33FkzY-V8FPv8',
-  authDomain: 'realbidasia.firebaseapp.com',
-  projectId: 'realbidasia'
+  apiKey: 'AIzaSyBz0YYlahECUXWOFquWJRBgO2xoCvolZ08',
+  authDomain: 'realbidasia-2fae7.firebaseapp.com',
+  projectId: 'realbidasia-2fae7'
 });
 
 var db = firebase.firestore();
 /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
-// });
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
 
 
-router.get('/', function (req, res, next) {
+router.get('/home', function (req, res, next) {
   res.render('home/en/top-home', {
     layout: 'homeLayout',
     title: 'Real Bid Asia | Home'
@@ -188,7 +188,7 @@ router.post('/addUser/:type', function (req, res, next) {
   args1["type"] = req.params.type
   //args1["language"] = req.params.language
 
-  console.log(args1.mobile)
+  console.log("args1.mobile=>", args1.mobile)
 
   Promise.all([
       firebaseGetWhere2("user", "mobile", "==", args1.mobile, null)
@@ -597,9 +597,9 @@ function _get(table, where_JSON = {}, tableID = null, specificTable = null) {
 
 let uploadHandler = multer({
   storage: multerGoogleStorage.storageEngine({
-    keyFilename: "./realbidasia-firebase-adminsdk-ctqcf-76c8ee2d95.json",
-    bucket: "realbidasia.appspot.com",
-    projectId: "realbidasia",
+    keyFilename: "./realbidasia-2fae7-firebase-adminsdk-7o24g-38a8f07807.json",
+    bucket: "gs://realbidasia-2fae7.appspot.com",
+    projectId: "realbidasia-2fae7",
     acl: 'publicRead',
     filename: function (req, res, cb) {
       let path = `documents/${req.body.userID}/${req.body.requestID}/${req.params.type}/${res.originalname}`

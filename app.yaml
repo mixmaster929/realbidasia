@@ -14,4 +14,4 @@ automatic_scaling:
 
 env_variables:
   db_root: "PROD"
-  YOUR_DOMAIN: "https://realbidasia.appspot.com"
+  YOUR_DOMAIN: "https://realbidasia-2fae7.appspot.com"

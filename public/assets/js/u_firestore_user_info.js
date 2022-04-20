@@ -1,8 +1,8 @@
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
-    apiKey: 'AIzaSyBXPOi229tqnZ-OqE2bap33FkzY-V8FPv8',
-    authDomain: 'realbidasia.firebaseapp.com',
-    projectId: 'realbidasia'
+    apiKey: 'AIzaSyBz0YYlahECUXWOFquWJRBgO2xoCvolZ08',
+    authDomain: 'realbidasia-2fae7.firebaseapp.com',
+    projectId: 'realbidasia-2fae7'
 });
 var db = firebase.firestore();
 // var stripe = Stripe("pk_test_51HwhmEBaXV37jGgvZZzQr8UuUO9uSx851Qu7oqjeE8pDtnPPF8430NyWCJauQBLXrQWoxHPZjp6csDuyoNeJvQNU00yAcf9Pf6");
@@ -426,7 +426,7 @@ function propertyToRentClick(e) {
                 }
             }
         });
-        e.preventDefault()
+        // e.preventDefault()
     }
     //});
 }
@@ -479,14 +479,16 @@ function propertyToSaleClick() {
 }
 //Property for Sale END
 function submitRentPropertyInfoClick() {
+    
     let propertyInfoForm = $("#propertyInfoForm")[0];
+    console.log("propertyInfoForm=>", propertyInfoForm);
     if (propertyInfoForm.checkValidity() === false) {
         propertyInfoForm.classList.add('was-validated');
     } else {
         Promise.all([
             sendSMSCodeClick()
         ]).then((result) => {
-            console.log(result)
+            console.log("test result=>",result)
             $("#congratulationPropertyInfo").modal();
             $("#lblcodeError").hide();
         });
@@ -1006,6 +1008,7 @@ function submitSaleAgreementClick() {
 
 //Send SMS code START
 function sendSMSCodeClick() {
+    console.log("sms test=>")
     return new Promise(function (resolve, reject) {
         firebase.auth().useDeviceLanguage();
         $("#submitRentPropertyInfo").prop("disabled", true);
@@ -1013,7 +1016,8 @@ function sendSMSCodeClick() {
             'size': 'invisible',
             'callback': function (response) {
                 // reCAPTCHA solved, allow signInWithPhoneNumber.
-                //onSignInSubmit();
+                console.log("alek=>")
+                onSignInSubmit();
             }
         });
         let url = $(location).attr('href');
@@ -1036,7 +1040,7 @@ function sendSMSCodeClick() {
 
                 firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
                     .then(function (confirmationResult) {
-                        console.log(result);
+                        console.log("resut=>", result);
                         resolve(confirmationResult);
                         $("#lblVerify").hide()
                         var count = 119
